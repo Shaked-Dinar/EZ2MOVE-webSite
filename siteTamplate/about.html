@@ -1,0 +1,87 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>ez2move - אודות</title>
+    <meta name="description" content="אודותינו, אודות האתר שלנו ez2move!" />
+    <meta name="keywords" content="ez2move, אודות" />
+    <meta name="author" content="daniel oren, shaked dinar, tomer grinberg, שקד דינר, דניאל אורן, תומר גרינברג" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/html/favicon.png">
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="fonts/fonts.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/dragend.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+</head>
+<body onload="tab_nav()">
+    <div id="aboutContainer">
+        <div class="global_items_insidePages">
+            <a href="index.html"><img src="images/html/logo.png" class="insidePagesLogo" width="100" alt="ez2move לוגו" /></a>
+            <a href="#0" tabindex="0" onclick="navFunc()" id="hamburgerNavIcon" alt="תפריט ניווט" width="40" aria-label="תפריט ניווט"></a>
+
+            <nav id="hamburgerNav" class="ver">
+                <ul>
+                    <li><a href="#0" tabindex="0" onclick="navFunc()" id="hamburgerNavIcon" alt="תפריט ניווט" width="40" aria-label="תפריט ניווט"></a></li>
+                    <li><a href="index.html" onclick="goToHomePage()">דף הבית</a></li>
+                    <li>
+                        <a href="#0" id="goToContent" onclick="goToContent()" style="cursor:pointer;">
+                            עבור לתוכן
+                            <div id="tangishIcon" alt="כפתור נגישות" aria-label="עבור לתוכן"></div>
+                        </a>
+                    </li>
+                    <li><a href="interactive.html">אריזה אינטראקטיבית</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="contactUs.html">צור קשר</a></li>
+                    <li><a href="siteMap.html">מפת אתר</a></li>
+                </ul>
+            </nav>
+
+
+   
+        </div>
+
+        <div id=div>
+            <div class="grid_wrapper_a">
+                <div id="aboutContent">
+                    <div id="allContentAbout">
+                        <h1 id="firstH">אודות</h1>
+                        <p class="pAbout">אתר EZ2MOVE בא לתת מענה לכל המידע הדרוש בעת מעבר דירה, באתר תוכלו למצוא מידע הן על תהליכי האריזה, ההובלה והבירוקרטיה והן מידע מותאם אישית לפי קבוצות אוכלוסייה</p>
+                        <p class="pAbout">פותח על ידי: <strong> שקד דינר, דניאל אורן ותומר גרינברג</strong> </p>
+                        <div id="ourAboutPics" alt="תמונות של דניאל תומר ושקד"></div>
+                        <p class="pAbout">
+                            במסגרת פרויקט משולב לקורסים בשנה א', תשע"ז
+
+                        </p>
+                        <ul>
+                            <li> אפיון ממשק וחווית משתמש</li>
+                            <li>עיצוב ממשק משתמש</li>
+                            <li>פיתוח אתרי אינטרנט</li>
+                            <li>נגישות למחשב - אתגר לאנשים עם מוגבלות</li>
+                        </ul>
+                        <p class="pAbout">האתר אופיין ועוצב לפי עקרונות של "עיצוב ממשק" ופותח ב- HTML5 ו-CSS3 תוך התחשבות בעקרונות "נגישות אתרים".</p>
+                        <p class="pAbout">
+                            האתר כולל <a href="#" id="intearctive">תוצר אינטראקטיבי</a> לייצוג ידע המאופיין ומפותח בקורסים" ארגון וייצוג ידע" ו- "מבוא לתכנות אינטראקטיבי".
+                        </p>
+                        <h2 id="h2About"> להלן המסכים שפותחו באתר:</h2>
+                        <ul id="screens">
+                            <li><a href="index.html">עמוד הבית</a></li>
+                            <li><a href="contactUs.html">צור קשר</a></li>
+                            <li><a href="about.html">אודות</a></li>
+                        </ul>
+
+                        <a href="http://www.hit.ac.il/telem/overview" target="_blank" id="telem">הפקולטה לטכנולוגיות למידה</a>
+                        <a href="http://www.hit.ac.il/" target="_blank"><img src="images/html/hitLogo.png" width="150" id="hitLogo" alt="לוגו של HIT, מקשר לאתר" /></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

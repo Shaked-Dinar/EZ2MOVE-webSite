@@ -1,0 +1,1783 @@
+body {
+    direction: rtl;
+}
+
+
+.grid_wrapper {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*טאבים*/
+
+
+nav.ver ul {
+    list-style: none;
+}
+
+    nav.ver ul li ul {
+        display: none;
+        position: absolute;
+        margin-top: -19px;
+        margin-right: 50px;
+    }
+
+        nav.ver ul li ul li {
+            background-color: White;
+        }
+
+    nav.ver ul li:hover ul {
+        display: block;
+    }
+
+
+
+
+/*עמודים*/
+#container #home1 {
+    background-color: #aacbbd;
+    margin: 0 auto;
+}
+
+.dragend-page {
+    direction: ltr;
+}
+
+    .dragend-page > div {
+        direction: rtl;
+    }
+
+
+div#divOfki {
+    margin: 0 auto;
+    height: 100vh;
+    position: relative;
+}
+
+
+#couple2 {
+    background-color: #f3f0ba;
+}
+
+
+#disable3 {
+    background-color: #f3f0ba;
+}
+
+
+#family4 {
+    background-color: #f3f0ba;
+}
+
+#student5 {
+    background-color: #f3f0ba;
+}
+
+#single6 {
+    background-color: #f3f0ba;
+}
+
+#global_items > #hamburgerNavIcon {
+    background-image: url(../images/html/hamburgerNav.png);
+    background-size: 101px;
+    display: block;
+    height: 50px;
+    width: 50px;
+    background-repeat: no-repeat;
+}
+
+
+#global_items > a:hover {
+    background-position-x: -52px;
+}
+
+
+
+
+
+
+#iconNav {
+    height: 108px;
+    margin: 0 auto;
+    width: fit-content;
+    margin-top: 47px;
+}
+
+#hetzim {
+    width: 100%;
+    margin-top: 370px;
+}
+
+
+#global_items {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 162px;
+}
+
+/*תפריט המבורגר*/
+#hamburgerNavIcon {
+    position: absolute;
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+
+
+#hamburgerNav {
+    position: absolute;
+    display: none;
+    background-color: #7b90a0;
+    width: 217px;
+    height: 100%;
+    z-index: 1;
+}
+
+
+    #hamburgerNav a {
+        padding-top: 6px;
+        text-decoration: none;
+        display: block;
+        padding-right: 30px;
+        color: black;
+        font-family: OpenSansHebrew-Light;
+        font-size: 15pt;
+    }
+
+
+    #hamburgerNav ul {
+        padding-top: 50px;
+    }
+
+        #hamburgerNav ul li {
+            padding-top: 20px;
+        }
+
+            #hamburgerNav ul li:hover a {
+                text-decoration: underline;
+                text-decoration-color: #5a5e60;
+            }
+
+            #hamburgerNav ul li a:focus {
+                text-decoration: underline;
+                text-decoration-color: #5a5e60;
+            }
+
+#goToContent {
+    text-decoration: none;
+    padding-right: 30px;
+    color: black;
+    font-family: OpenSansHebrew-Light;
+    font-size: 15pt;
+}
+
+    #goToContent:hover {
+        text-decoration: underline;
+        text-decoration-color: #5a5e60;
+    }
+
+#tangishIcon {
+    background-image: url(../images/html/handicap.png);
+    background-size: 51px;
+    width: 23.5px;
+    height: 23.5Px;
+    background-position-x: -26.5px;
+    margin-right: 86px;
+    margin-top: -19px;
+    margin-bottom: -8px;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+    #tangishIcon:hover {
+        background-position-x: left;
+        cursor: pointer;
+    }
+/*עמוד הבית*/
+#personaLines {
+    font-family: OpenSansHebrew-Light;
+    position: absolute;
+    right: 7%;
+    top: 22%;
+}
+
+#coupleSentence {
+    font-family: OpenSansHebrew-Light;
+    position: absolute;
+    right: 27%;
+    top: 100%;
+    display: none;
+    color: #414344;
+    font-size: 15pt;
+}
+
+
+#disableSentence {
+    font-family: OpenSansHebrew-Light;
+    position: absolute;
+    right: 30%;
+    top: 100%;
+    display: none;
+    color: #414344;
+    font-size: 15pt;
+}
+
+
+#familySentence {
+    font-family: OpenSansHebrew-Light;
+    position: absolute;
+    right: 25%;
+    top: 100%;
+    display: none;
+    color: #414344;
+    font-size: 15pt;
+}
+
+#studentSentence {
+    font-family: OpenSansHebrew-Light;
+    position: absolute;
+    right: 25%;
+    top: 100%;
+    display: none;
+    color: #414344;
+    font-size: 15pt;
+}
+
+#singleSentence {
+    font-family: OpenSansHebrew-Light;
+    position: absolute;
+    right: 27%;
+    top: 100%;
+    display: none;
+    color: #414344;
+    font-size: 15pt;
+}
+/*תפריט אייקונים*/
+
+#bait {
+    background-image: url(../images/css/iconNav/homeHover.png);
+    height: 30px;
+    width: 107px;
+    background-repeat: no-repeat;
+    background-size: 221px;
+    background-position-x: left;
+}
+
+    #bait.active {
+        background-position-x: -116px;
+    }
+
+    #bait:hover {
+        background-position-x: -116px;
+    }
+
+
+
+
+#couple {
+    background-image: url(../images/css/iconNav/couple.png);
+    height: 34px;
+    width: 108px;
+    background-repeat: no-repeat;
+    background-size: 221px;
+    background-position-x: right;
+}
+
+    #couple.active {
+        background-position-x: left;
+    }
+
+    #couple:hover {
+        background-position-x: 1px;
+    }
+
+
+
+        #couple:hover > #coupleSentence {
+            display: block;
+        }
+
+#iconNav a:focus #couple {
+    background-position-x: 1px;
+}
+
+
+#disable {
+    background-image: url(../images/css/iconNav/disable.png);
+    width: 107px;
+    height: 29px;
+    background-repeat: no-repeat;
+    background-size: 221px;
+    background-size: 221px;
+}
+
+    #disable.active {
+        background-position-x: right;
+        height: 36px;
+    }
+
+    #disable:hover {
+        background-position-x: -114px;
+        height: 36px;
+    }
+
+
+#iconNav a:focus #disable {
+    background-position-x: -114px;
+    height: 36px;
+}
+
+#disable #f:hover > #disableSentence, #disable:hover #disableSentence {
+    display: block;
+}
+
+#family {
+    background-image: url(../images/css/iconNav/family.png);
+    height: 34px;
+    width: 107px;
+    background-repeat: no-repeat;
+    background-size: 221px;
+}
+
+    #family.active {
+        background-position-x: -116px;
+    }
+
+    #family:hover {
+        background-position-x: -116px;
+    }
+
+#iconNav a:focus #family {
+    background-position-x: -116px;
+}
+
+#family:hover > #familySentence {
+    display: block;
+}
+
+#student {
+    background-image: url(../images/css/iconNav/student.png);
+    height: 36px;
+    width: 108px;
+    background-repeat: no-repeat;
+    background-size: 221px;
+    background-position-x: left;
+}
+
+    #student.active {
+        background-position-x: -114px;
+    }
+
+    #student:hover {
+        background-position-x: -114px;
+    }
+
+#iconNav a:focus #student {
+    background-position-x: -114px;
+}
+
+
+#student:hover > #studentSentence {
+    display: block;
+}
+
+#single {
+    background-image: url(../images/css/iconNav/single.png);
+    height: 34px;
+    width: 107px;
+    background-repeat: no-repeat;
+    background-size: 221px;
+    background-position-x: right;
+}
+
+    #single.active {
+        background-position-x: 2px;
+    }
+
+    #single:hover {
+        background-position-x: 2px;
+    }
+
+        #single:hover > #singleSentence {
+            display: block;
+        }
+
+#iconNav a:focus #single {
+    background-position-x: 2px;
+    ;
+}
+
+.navDesign {
+    font-family: OpenSansHebrew-Light;
+    font-size: 13pt;
+    padding-top: 79px;
+    margin-right: 10px;
+    text-align: center;
+}
+
+
+#iconNav ul li {
+    display: inline-block;
+    float: right;
+}
+
+    #iconNav ul li a {
+        text-decoration: none;
+        color: white;
+    }
+
+#f {
+    margin-top: -10px;
+    font-family: OpenSansHebrew-Light;
+    font-size: 12pt;
+    width: 58px;
+    padding-right: 24px;
+}
+
+/*לוגו עמוד הבית*/
+#logo, #logo h1 {
+    font-family: 'Jura-Medium';
+    text-align: left;
+    width: 241px;
+    font-size: 60pt;
+    font-weight: normal;
+}
+
+
+#backGroundUnderLogo a {
+    text-decoration: none;
+    color: black;
+}
+
+backGroundUnderLogo :focus {
+    border: red 1px solid;
+}
+
+#hetzRight {
+    background-image: url(../images/css/right_arrow.png);
+    background-size: 50px;
+    height: 69px;
+    width: 24px;
+    float: right;
+    display: none;
+    background-repeat: no-repeat;
+    margin-right: 35px;
+    background-position-x: -1px;
+    cursor: pointer;
+}
+
+    #hetzRight:hover {
+        background-position-x: -27px;
+    }
+
+#hetzLeft {
+    background-image: url(../images/css/left_arrow.png);
+    background-size: 50px;
+    height: 69px;
+    width: 24px;
+    float: left;
+    background-repeat: no-repeat;
+    margin-left: 35px;
+    background-position-x: -24px;
+    cursor: pointer;
+}
+
+    #hetzLeft:hover {
+        background-position-x: 2px;
+    }
+
+#readMoreButton {
+    height: 28px;
+    width: 101px;
+    padding-top: 3px;
+    background-color: #065d5f;
+    cursor: pointer;
+    font-family: OpenSansHebrew-Regular;
+    color: white;
+    text-align: center;
+    font-size: 17pt;
+    text-decoration: none;
+    position: absolute;
+    top: 430px;
+    left: 146px;
+}
+
+
+#readMoreButton1 {
+    height: 28px;
+    width: 101px;
+    padding-top: 3px;
+    background-color: #065d5f;
+    cursor: pointer;
+    font-family: OpenSansHebrew-Regular;
+    color: white;
+    text-align: center;
+    font-size: 17pt;
+    text-decoration: none;
+    position: absolute;
+    top: 430px;
+    left: 146px;
+}
+
+
+#readMoreButton2 {
+    height: 28px;
+    width: 101px;
+    padding-top: 3px;
+    background-color: #065d5f;
+    cursor: pointer;
+    font-family: OpenSansHebrew-Regular;
+    color: white;
+    text-align: center;
+    font-size: 17pt;
+    text-decoration: none;
+    position: absolute;
+    top: 430px;
+    left: 146px;
+}
+
+
+
+
+#readMoreButton3 {
+    height: 28px;
+    width: 101px;
+    padding-top: 3px;
+    background-color: #065d5f;
+    cursor: pointer;
+    font-family: OpenSansHebrew-Regular;
+    color: white;
+    text-align: center;
+    font-size: 17pt;
+    text-decoration: none;
+    position: absolute;
+    top: 430px;
+    left: 146px;
+}
+
+
+#readMoreButton4 {
+    height: 28px;
+    width: 101px;
+    padding-top: 3px;
+    background-color: #065d5f;
+    cursor: pointer;
+    font-family: OpenSansHebrew-Regular;
+    color: white;
+    text-align: center;
+    font-size: 17pt;
+    text-decoration: none;
+    position: absolute;
+    top: 430px;
+    left: 146px;
+}
+
+
+.content {
+    width: 960px;
+    margin: 0 auto;
+    font-family: OpenSansHebrew-Light;
+    font-size: 15pt;
+}
+
+#up {
+    position: absolute;
+    width: 706px;
+    right: 50%;
+    transform: translateX(50%);
+    z-index: 2;
+}
+
+#logo {
+    margin: auto;
+    padding-right: 49px;
+}
+
+
+#backGroundUnderLogo {
+    background-image: url(../images/css/homePageTextBackground.png);
+    height: 449px;
+    background-repeat: no-repeat;
+    background-size: 601px;
+    width: 606px;
+    margin: 187px auto auto auto;
+    padding-top: 42px;
+}
+
+
+
+#box {
+    background-image: url(../images/css/logoBox.png);
+    background-size: 140px;
+    height: 116px;
+    width: 140px;
+    margin-bottom: -91px;
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+}
+
+#ez {
+    color: #065d5f;
+}
+
+#tagline {
+    font-family: OpenSansHebrew-Light;
+    font-size: 19pt;
+    width: 248px;
+    margin: auto;
+    padding-right: 49px;
+}
+
+#tagline2 {
+    font-size: 25pt;
+    font-family: OpenSansHebrew-Light;
+    margin-top: 28px;
+    text-align: center;
+    width: 394px;
+    margin: auto;
+    padding-top: 36px;
+    padding-right: 49px;
+}
+
+
+table, th, tr, td {
+    border: 1px black solid;
+    border-collapse: collapse;
+}
+
+
+/*עמוד זוג*/
+
+
+#coupleHead {
+}
+
+#coupleDivAbsolute {
+    position: relative;
+    height: 500px;
+    width: 399px;
+    margin: 193px auto;
+}
+
+.bigCoupleIcon {
+    display: block;
+    width: 395px;
+    position: absolute;
+}
+
+
+
+
+.jumpingPointDes {
+    width: 20px;
+    height: 20px;
+    padding-top: 36px;
+}
+
+
+.insidePagesLogo {
+    position: absolute;
+    width: 95px;
+    left: 5%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#insidePagesLogo {
+    position: absolute;
+    width: 95px;
+    left: 5%;
+    z-index: 1;
+    cursor: pointer;
+}
+
+#coupleContent {
+    background-color: #c3eac6;
+    line-height: 25px;
+}
+
+#backgroundLine1 {
+    background-image: url(../images/css/backgroundLine.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 82px;
+}
+
+#backgroundLine8 {
+    background-image: url(../images/css/backgroundLine.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 83px;
+}
+
+#backgroundLine9 {
+    background-image: url(../images/css/backgroundLine.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 83px;
+}
+
+
+#backgroundLine7 {
+    background-image: url(../images/css/backgroundLine.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 83px;
+}
+
+#contentStart > h3 {
+    color: #262262;
+    font-size: 22pt;
+    text-align: center;
+    padding-top: 40px;
+}
+
+
+#contentButton {
+    width: 251px;
+    height: 30px;
+    color: white;
+    background-color: #42a09b;
+    text-align: center;
+    font-size: 15pt;
+    padding-top: 6px;
+    display: inline-block;
+    float: right;
+    margin-left: 88px;
+    margin-right: 175px;
+    margin-top: 25px;
+}
+
+a#contentButton {
+    text-decoration: none;
+}
+
+#genericButton {
+    width: 251px;
+    height: 30px;
+    color: white;
+    background-color: #557b76;
+    text-align: center;
+    font-size: 15pt;
+    padding-top: 6px;
+    display: inline-block;
+    float: right;
+    margin-top: 25px;
+}
+
+a#genericButton {
+    text-decoration: none;
+}
+
+
+.content, #coupleContent, .genericContent {
+    font-size: 14pt;
+    line-height: 25px;
+}
+
+#firstPara {
+    margin-bottom: 10px;
+}
+
+    #firstPara, #firstPara ul li {
+        padding: 5px;
+        padding-top: 20px;
+        width: 674px;
+        margin-right: 20px;
+        font-size: 15pt;
+        float: right;
+    }
+
+#firstLine {
+    padding-top: 28px;
+    padding-bottom: 8px;
+}
+
+#boxPic {
+    background-image: url(../images/css/logoBox.png);
+    opacity: 0.7;
+    background-repeat: no-repeat;
+    height: 393px;
+    width: 250px;
+    background-size: 500px;
+    float: left;
+    margin-top: 25px;
+    background-position-x: -244px;
+}
+
+#coupleContent table, #coupleContent th, #coupleContent tr, #coupleContent td, #coupleContent td ul, #coupleContent td ul li {
+    list-style: none;
+}
+
+#coupleContent table {
+    width: 920px;
+    margin-right: 20px;
+    margin-top: 11px;
+}
+
+#coupleContent th, #coupleContent td {
+    padding: 6px;
+}
+
+#coupleContent th {
+    background-color: #557b76;
+    color: white;
+}
+
+#coupleContent td ul li::before {
+    content: "-";
+    font-size: 18pt;
+}
+
+#coupleContent td {
+    padding: 13px;
+}
+
+.genericContent {
+    font-family: OpenSansHebrew-Light;
+}
+
+#backgroundLine2 {
+    margin-top: 55px;
+    background-image: url(../images/css/backgroundLine2.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 98px;
+}
+
+
+
+
+/*תוכן גנרי*/
+
+
+/*אריזה*/
+.genericContent > h3 {
+    background-color: #557b76;
+    color: #ffeec2;
+    text-align: center;
+    font-size: 22pt;
+    padding-bottom: 35px;
+    padding-top: 15px;
+}
+
+#ariza {
+    background-color: #557b76;
+}
+
+    #ariza h4 {
+        color: #ffeec2;
+        font-family: OpenSansHebrew-Regular;
+        font-size: 18pt;
+        margin-right: 20px;
+        padding-top: 50px;
+    }
+
+    #ariza h5 {
+        color: #ffeec2;
+        font-size: 16pt;
+        padding-top: 32px;
+        margin-right: 20px;
+    }
+
+.genericContent #ariza ul li {
+    color: white;
+    font-size: 15pt;
+    padding: 6px;
+    padding-top: 10px;
+    margin-right: 71px;
+    width: 817px;
+}
+
+#ariza h4 p a {
+    text-decoration: underline;
+    color: white;
+    font-size: 15pt;
+}
+
+#packingCompanies {
+    color: white;
+    font-size: 15pt;
+    width: 878px;
+    margin-right: 20px;
+    padding-top: 19px;
+}
+
+    #packingCompanies a {
+        color: white;
+    }
+
+        #packingCompanies a:hover {
+            color: #979da3;
+        }
+
+#bottomLinePacking {
+    color: white;
+    font-size: 13pt;
+    width: 878px;
+    margin-right: 20px;
+    padding-top: 7px;
+}
+
+#backgroundLine3 {
+    background-image: url(../images/css/backgroundLine3.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 55px;
+    margin-top: 45px;
+}
+
+
+/*הובלה*/
+#SelfMove {
+    text-decoration: underline;
+    text-decoration-color: #6b6b6b;
+    color: black;
+}
+
+    #SelfMove:hover {
+        color: #979da3;
+    }
+
+#shavirTip {
+    color: black;
+}
+
+    #shavirTip:hover {
+        color: #5a5e60;
+    }
+
+#hovala {
+    background-color: #f9ac80;
+}
+
+    #hovala h4 {
+        color: #35190c;
+        font-family: OpenSansHebrew-Regular;
+        font-size: 18pt;
+        margin-right: 20px;
+        padding-top: 50px;
+    }
+
+    #hovala p {
+        color: #25201d;
+        font-size: 15pt;
+        width: 878px;
+        margin-right: 20px;
+        padding-top: 7px;
+    }
+
+    #hovala h5 {
+        color: #35190c;
+        font-size: 16pt;
+        padding-top: 32px;
+        margin-right: 20px;
+    }
+
+.genericContent #hovala #selfMoving ul li {
+    color: #25201d;
+    font-size: 15pt;
+    padding: 6px;
+    padding-top: 7px;
+    margin-right: 71px;
+    width: 817px;
+}
+
+#bottomLineMoving {
+    color: #25201d;
+    font-size: 13pt;
+    width: 878px;
+    margin-right: 20px;
+    padding-top: 7px;
+}
+
+#extraInfoMoving {
+    color: #25201d;
+}
+
+    #extraInfoMoving:hover {
+        color: #766a6a;
+    }
+
+.movingCost {
+    margin-right: 20px;
+    margin-top: 15px;
+    width: 386px;
+    vertical-align: middle;
+}
+
+    .movingCost ul li {
+        color: #3f3a33;
+        font-size: 11pt;
+        margin-right: 27px;
+        width: 250px;
+        text-align: center;
+    }
+
+    .movingCost ul {
+        padding-top: 10px;
+    }
+
+    .movingCost th, .movingCost tr, .movingCost td {
+        color: #25201d;
+        font-size: 14pt;
+        text-align: center;
+        border: 1px #4a4643 solid;
+    }
+
+    .movingCost #cost {
+        padding-top: 10px;
+    }
+
+#hCompaniesInfo {
+    color: #25201d;
+}
+
+    #hCompaniesInfo:hover {
+        color: #766a6a;
+    }
+/*בירוקרטיה*/
+
+#birokratia {
+    background-color: #c3dddd;
+    color: #0f352f;
+    font-size: 15pt;
+}
+
+    #birokratia h4 {
+        font-size: 18pt;
+        margin-right: 20px;
+        padding-top: 50px;
+        font-family: OpenSansHebrew-Regular;
+    }
+
+    #birokratia h5 {
+        font-size: 16pt;
+        padding-top: 32px;
+        margin-right: 20px;
+        font-family: OpenSansHebrew-Regular;
+    }
+
+    #birokratia h6 {
+        font-size: 16pt;
+        margin-right: 20px;
+        padding-top: 10px;
+    }
+
+#backgroundLine4 {
+    background-image: url(../images/css/backgroundLine4.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 94px;
+}
+
+
+
+#birokratia ul li {
+    font-size: 15pt;
+    padding: 6px;
+    padding-top: 7px;
+    margin-right: 71px;
+    width: 817px;
+}
+
+#birokratia p {
+    width: 878px;
+    margin-right: 20px;
+    padding-top: 7px;
+}
+
+    #birokratia p p {
+        font-size: 13pt;
+        margin-top: -17px;
+    }
+
+#bigPicWater {
+    font-size: 13pt;
+    margin-top: -17px;
+}
+
+#waterForm {
+    margin-top: 14px;
+}
+
+#birokratia table {
+    width: 863px;
+    margin-right: 20px;
+    margin-top: 11px;
+}
+
+#birokratia th, #birokratia tr, #birokratia td {
+    padding: 5px;
+}
+
+.content footer {
+    font-family: OpenSansHebrew-Light;
+    width: 100%;
+    text-align: center;
+    padding-top: 57px;
+    padding-bottom: 10px;
+    font-size: 13pt;
+}
+
+#bottomLineBiroc {
+    font-size: 13pt;
+    width: 878px;
+    margin-right: 20px;
+    padding-top: 7px;
+}
+
+#gasFormIngo, #newHashForm, #maanForm {
+    margin-right: 20px;
+}
+
+#gazPic, #hashmalPic, #newHashPic, #maanPic {
+    font-size: 13pt;
+    margin-top: -17px;
+}
+
+#govLink {
+    color: #0f352f;
+}
+
+    #govLink:hover {
+        color: #766a6a;
+    }
+/*אייקונים גדולים- טקסט*/
+#bigCoupleText {
+    font-family: OpenSansHebrew-Light;
+    font-size: 63pt;
+    color: white;
+    top: 277px;
+    position: absolute;
+    left: 157px;
+}
+
+
+
+#bigDisableText {
+    font-family: OpenSansHebrew-Light;
+    font-size: 44pt;
+    color: white;
+    top: 254px;
+    position: absolute;
+    left: 117px;
+}
+
+
+#bigFamilyText {
+    font-family: OpenSansHebrew-Light;
+    font-size: 57pt;
+    color: white;
+    top: 277px;
+    position: absolute;
+    left: 83px;
+}
+
+#bigStudentText {
+    font-family: OpenSansHebrew-Light;
+    font-size: 60pt;
+    color: white;
+    top: 277px;
+    position: absolute;
+    left: 84px;
+}
+
+#bigSingleText {
+    font-family: OpenSansHebrew-Light;
+    font-size: 63pt;
+    color: white;
+    top: 277px;
+    position: absolute;
+    left: 135px
+}
+
+
+
+
+/*סטודנט*/
+#studentContent {
+    font-family: OpenSansHebrew-Light;
+    font-size: 15pt;
+    background-color: #C3EAC6;
+}
+
+/*יחיד*/
+
+#singleContent {
+    font-family: OpenSansHebrew-Light;
+    font-size: 15pt;
+}
+
+
+
+/*אדם עם מוגבלות*/
+#disableContent {
+    background-color: #c3eac6;
+    line-height: 25px;
+    font-size: 15pt;
+}
+
+#backgroundLine5 {
+    background-image: url(../images/css/backgroundLine.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 82px;
+}
+
+#hDis {
+    font-weight: bold;
+    width: 157px;
+    margin-top: 81px;
+    margin-right: 20px;
+}
+
+#firstUlDisable ul li {
+    width: 635px;
+}
+
+#disableContent ul li {
+    padding: 5px;
+    padding-top: 21px;
+    margin-right: 51px;
+}
+
+#disableContent p {
+    margin-right: 20px;
+}
+
+#disSecPara ul li {
+    width: 800px;
+}
+
+#disableContent h4 {
+    font-size: 18pt;
+    margin-right: 20px;
+    padding-top: 30px;
+    margin-bottom: 7px;
+    margin-top: 5px;
+}
+
+#disableContent h5 {
+    font-size: 16pt;
+    padding-top: 15px;
+    margin-right: 20px;
+}
+
+#backgroundLine6 {
+    margin-top: 55px;
+    background-image: url(../images/css/backgroundLine2.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 98px;
+}
+
+#disableJumpTo {
+    font-size: 13pt;
+    margin-top: -8px;
+}
+
+/*משפחה*/
+#familyContent {
+    background-color: #C3EAC6;
+}
+
+#LuzFamily {
+    margin-right: 20px;
+    line-height: 25px;
+    width: 892px;
+}
+
+    #LuzFamily h4 {
+        margin-bottom: 20px;
+    }
+
+
+#familyContent h4 {
+    font-family: OpenSansHebrew-Regular;
+    font-size: 18pt;
+    margin-top: 46px;
+}
+
+#familyContent table th {
+    background-color: #557B76;
+    color: white;
+}
+
+#familyContent table td {
+    padding: 5px;
+}
+
+#familyContent table {
+    margin-right: 20px;
+    clear: both;
+    width: 920px;
+    margin-top: 23px;
+}
+
+.familyP {
+    margin-right: 20px;
+}
+
+    .familyP ul li {
+        margin-right: 20px;
+        padding-top: 16px;
+    }
+
+    .familyP ul {
+        width: 686px;
+    }
+
+#firstParaFamily {
+    margin-top: 108px;
+}
+
+
+/*יחיד*/
+#singleContent {
+    background-color: #C3EAC6;
+}
+
+
+    #singleContent table th {
+        background-color: #557B76;
+        color: white;
+    }
+
+    #singleContent table td {
+        padding: 5px;
+    }
+
+    #singleContent table {
+        margin-right: 20px;
+        margin-top: 23px;
+        width: 673px;
+    }
+
+
+    #singleContent p {
+        margin-top: 80px;
+        margin-right: 20px;
+    }
+
+
+#goUpButton {
+    background-image: url(../images/css/goUp.png);
+    height: 36px;
+    background-repeat: no-repeat;
+    background-size: 38px;
+    position: absolute;
+    top: 409%;
+    right: -12%;
+    width: 36px;
+    display: none;
+    cursor: pointer;
+}
+
+    #goUpButton:hover {
+        background-color: #009688;
+    }
+
+/*סטודנט*/
+
+#backgroundLine7 {
+    background-image: url(../images/css/backgroundLine.png);
+    background-size: 960px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 83px;
+}
+
+#studentContent {
+    font-family: OpenSansHebrew-Light;
+    font-size: 15pt;
+    background-color: #C3EAC6;
+}
+
+    #studentContent ul li {
+        margin-right: 40px;
+        width: 800px;
+        padding-top: 16px;
+    }
+
+    #studentContent h4 {
+        font-family: OpenSansHebrew-Regular;
+        font-size: 18pt;
+        margin-top: 57px;
+        padding-bottom: 10px;
+        margin-right: 20px;
+    }
+
+#firstP {
+    margin-top: 112px;
+}
+
+#ulStudent {
+    width: 648px;
+}
+
+
+
+
+
+
+nav.ver ul {
+    list-style: none;
+}
+
+    nav.ver ul li ul {
+        display: none;
+        position: absolute;
+        margin-top: -19px;
+        margin-right: 50px;
+    }
+
+        nav.ver ul li ul li {
+            background-color: White;
+        }
+
+    nav.ver ul li:hover ul {
+        display: block;
+    }
+
+
+
+/*אריזה אינטראקטיבית*/
+#interactiveContent h2 {
+    padding-top: 28px;
+    color: black;
+    text-align: center;
+}
+
+#interactiveContainer {
+    background-color: #aacbbd;
+}
+
+#interactiveLogo {
+    position: absolute;
+    left: 7%;
+    cursor: pointer;
+}
+
+#interactiveContent {
+    background-color: rgb(153, 190, 175);
+    font-family: OpenSansHebrew-Light;
+    font-size: 25pt;
+    padding-top: 50px;
+    color: white;
+}
+
+
+/*מפת אתר*/
+#siteMapContainer {
+    background-color: #aacbbd;
+}
+
+#siteMapContent {
+    background-color: rgb(153, 190, 175);
+    font-family: OpenSansHebrew-Light;
+    font-size: 15pt;
+    padding-top: 50px;
+    line-height: 25px;
+}
+
+    #siteMapContent h1 {
+        background-color: #f0f5e4;
+        padding-top: 11px;
+        padding-bottom: 11px;
+        padding-right: 30px;
+        width: 216px;
+        font-size: 25pt;
+        color: #115d5f;
+    }
+
+    #siteMapContent ul li a {
+        color: black;
+        text-decoration: none;
+    }
+
+
+    #siteMapContent ul {
+        margin-top: 20px;
+        margin-right: 30px;
+        width: 169px;
+    }
+
+        #siteMapContent ul li:hover a {
+            text-decoration: underline;
+            color: #5a5e60;
+        }
+
+        #siteMapContent ul li a:focus {
+            text-decoration: underline;
+            color: #5a5e60;
+        }
+
+.not-allowed:hover {
+    text-decoration: underline;
+    color: #5a5e60;
+    cursor: not-allowed;
+}
+
+
+
+#ab {
+    cursor: pointer;
+}
+
+/*אודות*/
+#screens li {
+    width: 85px;
+}
+
+#ourAboutPics {
+    background-image: url(../images/css/aboutPics.png);
+    background-size: 377px;
+    height: 119px;
+    width: 393px;
+    background-repeat: no-repeat;
+}
+
+#aboutContent {
+    background-color: rgb(153, 190, 175);
+}
+
+#allContentAbout {
+    font-size: 15pt;
+    line-height: 25px;
+    padding-top: 50px;
+    font-family: OpenSansHebrew-Light;
+    height: 907px;
+}
+
+#firstH {
+    background-color: #f0f5e4;
+    color: #115d5f;
+    font-size: 25pt;
+    width: 216px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-right: 20px;
+}
+
+.pAbout {
+    padding-bottom: 5px;
+    padding-top: 18px;
+    margin-right: 20px;
+    width: 750px;
+}
+
+#h2About {
+    font-weight: bold;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+#allContentAbout ul li {
+    margin-right: 40px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+#hitLogo {
+    margin-top: 70px;
+    margin-right: -213px;
+    clear: both;
+}
+
+
+#intearctive {
+    color: black;
+}
+
+    #intearctive:hover {
+        color: #557b76;
+    }
+
+#allContentAbout ul li a {
+    color: black;
+}
+
+#allContentAbout ul li:hover a {
+    color: #557b76;
+}
+
+
+#div {
+    margin: 0 auto;
+}
+
+#aboutContainer {
+    background-color: #aacbbd;
+    height: 1000px;
+}
+
+#telem {
+    float: right;
+    margin-right: 20px;
+    margin-top: 30px;
+}
+
+a#telem {
+    color: black;
+}
+
+    a#telem:hover {
+        color: #557b76;
+    }
+
+.grid_wrapper_a {
+    width: 960px;
+    margin: 0 auto;
+}
+
+/*צור קשר*/
+
+
+
+#contactUsContainer {
+    background-color: #aacbbd;
+}
+
+    #contactUsContainer #hamburgerNav {
+        height: 733px;
+    }
+
+
+#conctacUsContent {
+    background-color: rgb(153, 190, 175);
+    font-family: OpenSansHebrew-Light;
+    padding-top: 50px;
+    color: black;
+    font-size: 15pt;
+    height: 683px;
+}
+
+
+#interFp {
+    background-color: #f0f5e4;
+    color: #115d5f;
+    font-size: 25pt;
+    width: 367px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-right: 20px;
+}
+
+
+
+
+
+#conctacUsContent h1 {
+    background-color: #f0f5e4;
+    color: #115d5f;
+    font-size: 23pt;
+    width: 216px;
+    padding-bottom: 11px;
+    padding-top: 11px;
+    padding-right: 20px;
+}
+
+#conctacUsContent h2, #conctacUsContent form {
+    padding-right: 20px;
+    padding-top: 20px;
+}
+
+#conctacUsContent h2 {
+    margin-right: 232px;
+    margin-top: 50px;
+}
+
+#myMs, #myEmail, #lastName, #firstName, #Send {
+    font-family: OpenSansHebrew-Light;
+}
+
+#conctacUsContent form {
+    display: block;
+    width: 139px;
+    margin-bottom: 28px;
+    float: right;
+}
+
+lable {
+    display: block;
+}
+
+input#firstName, input#lastName, input#myEmail {
+    margin-bottom: 20px;
+}
+
+#ourPic {
+    background-image: url(../images/css/us.png);
+    height: 264px;
+    width: 260px;
+    background-repeat: no-repeat;
+    background-size: 263px;
+    float: left;
+    margin-left: 258px;
+    margin-top: 21px;
+}
+
+#usForm_pic {
+    margin-right: 232px;
+}
+
+
+/*עמודים פנימיים*/
+.global_items_insidePages {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: 108px;
+}
+
+    .global_items_insidePages > #hamburgerNavIcon {
+        background-image: url(../images/html/hamburgerNav.png);
+        background-size: 101px;
+        display: block;
+        height: 50px;
+        width: 50px;
+        background-repeat: no-repeat;
+    }
+
+
+    .global_items_insidePages > a:hover {
+        background-position-x: -52px;
+    }
+
+.goUpDes {
+    background-image: url(../images/css/goUp.png);
+    height: 34px;
+    width: 35px;
+    background-size: 33px;
+    margin-right: -59px;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 560px;
+    display: none;
+}
+
+.scrollUpPointDes {
+    height: 20px;
+    width: 20px;
+}
+
+#interactiveFrame{
+    margin-right: 211px;
+    margin-top: 29px;
+}
+
+

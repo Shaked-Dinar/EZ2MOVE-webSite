@@ -1,0 +1,32 @@
+@font-face {
+    font-family: 'Jura-DemiBold';
+    src: url('Jura-DemiBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Jura-Light';
+    src: url('Jura-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Jura-Medium';
+    src: url('Jura-Medium.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'Jura-Regular';
+    src: url('Jura-Regular.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew-Bold';
+    src: url('OpenSansHebrew-Bold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew-ExtraBold';
+    src: url('OpenSansHebrew-ExtraBold.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew-Light';
+    src: url('OpenSansHebrew-Light.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'OpenSansHebrew-Regular';
+    src: url('OpenSansHebrew-Regular.ttf') format('truetype');
+}

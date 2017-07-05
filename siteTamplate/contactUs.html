@@ -1,0 +1,74 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>ez2move - צור קשר</title>
+    <meta name="description" content="צרו איתנו קשר" />
+    <meta name="keywords" content="צור קשר, ez2move" />
+    <meta name="author" content="daniel oren, shaked dinar, tomer grinberg, שקד דינר, דניאל אורן, תומר גרינברג" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/html/favicon.png">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="fonts/fonts.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+    <script src="https://webdevelopmentcourse.github.io/contactUs/WebDevelopmentCourse/jScripts/contactUs.js" type="text/javascript"></script>
+
+
+</head>
+<body onload="tab_nav()">
+    <div id="contactUsContainer">
+        <div class="global_items_insidePages">
+            <a href="index.html"><img src="images/html/logo.png" class="insidePagesLogo" width="100" alt="ez2move לוגו" /></a>
+            <a href="#0" tabindex="0" onclick="navFunc()" id="hamburgerNavIcon" alt="תפריט ניווט" width="40" aria-label="תפריט ניווט"></a>
+
+            <nav id="hamburgerNav" class="ver">
+                <ul>
+                    <li><a href="#0" tabindex="0" onclick="navFunc()" id="hamburgerNavIcon" alt="תפריט ניווט" width="40" aria-label="תפריט ניווט"></a></li>
+                    <li><a href="index.html" onclick="goToHomePage()">דף הבית</a></li>
+                    <li>
+                        <a href="#0" id="goToContent" onclick="goToContent()" style="cursor:pointer;">
+                            עבור לתוכן
+                            <div id="tangishIcon" alt="כפתור נגישות" aria-label="עבור לתוכן"></div>
+                        </a>
+                    </li>
+                    <li><a href="interactive.html">אריזה אינטראקטיבית</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="contactUs.html">צור קשר</a></li>
+                    <li><a href="siteMap.html">מפת אתר</a></li>
+                </ul>
+            </nav>
+
+        </div>
+        <div id=divOfki>
+            <div class="grid_wrapper">
+                <div id="conctacUsContent">
+                    <h1>צור קשר</h1>
+                    <h2>יש לכם טיפים לשיפור? או שסתם בא לכם לפרגן? כתבו לנו!</h2>
+                    <div id="usForm_pic">
+                        <form>
+                            <input type="hidden" id="myEmail" name="name" value="oredaniel7@gmail.com">
+                            <label for="firstName">שם פרטי:</label><input type="text" name="שם פרטי" id="firstName" placeholder="הכנס את שמך הפרטי" />
+                            <label for="lastName">שם משפחה:</label><input type="text" id="lastName" name="שם משפחה" placeholder="הכנס את שם המשפחה" />
+                            <label for="myEmail">אימייל:</label><input type="email" id="myEmail" name="אימייל" placeholder="הכנס את כתובת המייל" />
+                            <label for="myMs">ההודעה:</label><textarea id="myMs" name="תוכן ההודעה" aria-labelledby="send" placeholder="הקלד את הודעתך כאן"></textarea>
+                            <input type="submit" id="Send" value="שלח" aria-label="שליחת טופס" alt="כפתור שלח">
+                            <br />
+                            <div id="feedback"></div>
+                        </form>
+                        <div id="ourPic"></div>
+
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>

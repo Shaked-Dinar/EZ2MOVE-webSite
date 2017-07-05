@@ -1,0 +1,2577 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>ez2move - עמוד הבית</title>
+    <meta name="description" content="אתר בנושא מעבר דירה, מותאם במיוחד בשבילך! מכיל תוכן על כל שלבי המעבר, החל מאריזה ועד המעבר לדירה החדשה!" />
+    <meta name="keywords" content="ez2move, moving, houseMoving, packing, how to pack?, אריזה, איך לארוז?, הובלות, קל לעבור דירה" />
+    <meta name="author" content="daniel oren, shaked dinar, tomer grinberg, שקד דינר, דניאל אורן, תומר גרינברג" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/html/favicon.png">
+
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="fonts/fonts.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/dragend.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+
+</head>
+<body onload="tab_nav()">
+    <div id="container">
+        <header>
+            <div id="global_items">
+                <img src="images/html/logo.png" id="insidePagesLogo" onclick="insidePagesLogoScroll()" width="100" alt="ez2move לוגו" />
+                <a href="#0" tabindex="0" onclick="navFunc()" id="hamburgerNavIcon" alt="תפריט ניווט" width="40" aria-label="תפריט ניווט"></a>
+
+                <nav id="hamburgerNav" class="ver">
+                    <ul>
+                        <li><a href="#0" tabindex="0" onclick="navFunc()" id="hamburgerNavIcon" alt="תפריט ניווט" width="40" aria-label="תפריט ניווט"></a></li>
+                        <li><a href="index.html" onclick="goToHomePage()">דף הבית</a></li>
+                        <li>
+                            <a href="#0" id="goToContent" onclick="goToContent()" style="cursor:pointer;">
+                                עבור לתוכן
+                                <div id="tangishIcon" alt="כפתור נגישות" aria-label="עבור לתוכן"></div>
+                            </a>
+                        </li>
+                        <li><a href="interactive.html">אריזה אינטראקטיבית</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="contactUs.html">צור קשר</a></li>
+                        <li><a href="siteMap.html">מפת אתר</a></li>
+                    </ul>
+                </nav>
+
+
+                <div id="hetzim">
+                    <a href="#0" tabindex="0" id="hetzLeft" onclick="hetzClickLeft()" aria-label="עבור לעמוד השמאלי"></a>
+                    <a href="#0" tabindex="0" id="hetzRight" onclick="hetzClickRight()" aria-label="עבוד לעמוד הימני"></a>
+                </div>
+            </div>
+
+            <div id="up">
+                <nav id="iconNav" class="ver">
+                    <ul>
+                        <li><a href="#" onclick="iconActive(1)"> <div id="#"> <div class="navDesign active" id="bait"> בית</div> </div> </a> </li>
+                        <li>
+                            <a href="#" onclick="iconActive(2)">
+                                <div class="navDesign" id="couple">
+                                    זוג
+                                    <div id="coupleSentence">קל יותר לעבור ביחד! אז איך עושים את זה נכון?</div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="iconActive(3)">
+                                <div id="#">
+                                    <div class="navDesign" id="disable">
+                                        <div id="f">
+                                            אדם עם מוגבלות
+                                            <div id="disableSentence">כל מה שצריך לדעת בדבר זכאויות נמצא כאן!</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="iconActive(4)">
+                                <div id="#">
+                                    <div class="navDesign" id="family">
+                                        משפחה
+                                        <div id="familySentence">עוברים עם ילדים? רוצים לדעת מתי כדאי לעשות את זה?</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="iconActive(5)">
+                                <div id="#">
+                                    <div class="navDesign" id="student">
+                                        סטודנט
+
+                                        <div id="studentSentence">לחוץ על הכסף? ריכזנו כמה טיפים לחיסכון בעלויות</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" onclick="iconActive(6)">
+                                <div id="#">
+                                    <div class="navDesign" id="single">
+
+                                        יחיד
+                                        <div id="singleSentence">יותר מידי משימות? הכנו לו"ז שמותאם בדיוק בשבילך!</div>
+                                    </div>
+                                </div>
+                            </a>
+                        </li>
+                    </ul>
+
+
+                </nav>
+                <div id="goUpButton" onclick="topFunction()"></div>
+
+            </div>
+        </header>
+        <div id=divOfki>
+            <!--בית-->
+            <article id="home1" class="dragend-page">
+                <div class="grid_wrapper">
+
+                    <div id="homeContent">
+
+                        <div id="backGroundUnderLogo">
+
+                            <a href="#0">
+                                <div id="logo">
+                                    <div id="box"></div>
+                                    <h1 lang="en" id="ez">EZ </h1><h1 lang="en">2MOVE</h1>
+                                </div>
+                            </a>
+                            <p id="tagline">מידע מותאם למעבר חכם!</p>
+                            <p id="tagline2"> ריכזנו עבורכם את כל המידע הנחוץ למעבר דירה מהיר ויעיל</p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <!--זוג-->
+            <article id="couple2" class="dragend-page">
+                <header id="coupleHead" class="firstFrames">
+                    <div id="scrollUpPointC" class="scrollUpPointDes"></div>
+                    <div id="coupleDivAbsolute">
+                        <img src="images/html/bigCoupleIcon.png" alt="זוג" class="bigCoupleIcon" width="500" />
+                        <h2 id="bigCoupleText">זוג</h2>
+                        <a href="#jumpingPoint" id="readMoreButton" alt="קרא עוד">קרא עוד</a>
+                    </div>
+                    <div id="jumpingPoint" class="jumpingPointDes"></div>
+
+                </header>
+
+                <div class="content">
+                    <div id="backgroundLine1"></div>
+
+                    <div id="coupleContent">
+                        <!--תחילת הגלילה-->
+                        <div id="goUpCouple" class="goUpDes" onclick="scrollUpc()" alt="קפוץ לראש העמוד" aria-label="לחצן הקפץ לראש העמוד"></div>
+                        <section id="contentStart">
+                            <h3>  התאמנו עבורכם טיפים שיהפכו את המעבר לקל יותר ומהיר יותר. </h3>
+                            <a href="#backgroundLine1" id="contentButton">לצפייה בתוכן זה, לחץ כאן</a>
+                            <a href="#genericJump" id="genericButton">לצפייה בתוכן מורחב, לחץ כאן</a>
+
+                        </section><div id="boxPic"></div>
+
+                        <div id="firstPara">
+                            <p>
+                                <div id="firstLine"><strong style="font-family: OpenSansHebrew-Light">העובדה שאתם עוברים בזוג, יכולה להוות יתרון גדול.</strong> </div>
+                                אנו ממליצים לכם לבצע חלוקת עבודה ביניכם כדי להקל על המעבר ולייעל את התהליך, לחסוך בזמן ובמאמץ. כדאי לכם לחלק ביניכם עבודה בצורה מסודרת, כל אחד בהתאם ליכולותיו.
+                            </p>
+                            <ul>
+                                <li>
+                                    <strong>ערכו רשימה</strong> של הדברים ההכרחיים להם אתם זקוקים,
+                                    ובדקו למי מבני הזוג יש אותם.<strong>  הימנעו מכפילות, </strong>אין טעם ששניכם תביאו, תחליטו על הפריט שישרת אתכם הכי טוב. את הפריט השני אפשר למכור או לתרום או להעביר לבני המשפחה.
+                                </li>
+                                <li>
+                                    במידה ואתם עוברים לדירה מאובזרת חלקית או בצורה מלאה, כמות הפריטים אותם אתם צריכים להביא אתכם יורדת.
+                                    <strong>
+                                        ערכו רשימה
+                                    </strong>
+                                    מסודרת של מה שיש ומה שחסר והתארגנו בהתאם.
+                                </li>
+                                <li>
+                                    במידה ויש לכם כמות גדולה של אביזרים לקנייה לבית החדש, כדאי להתחיל לארגן אותם
+
+                                    <strong> ולקנות מה שצריך לפי הצורך, חודש מראש.</strong>
+                                </li>
+                                <li>
+                                    <strong>
+                                        מומלץ ששניכם תהיו שותפים לאריזה
+                                    </strong>
+                                    של הפריטים
+                                    (בעיקר לא אלה האישיים), כדי שיהיה לכם יותר קל בתהליך הפריקה.
+                                </li>
+                            </ul>
+                            <p style="font-size:20pt; padding-top:25px; clear:both;">לו"ז</p>
+                        </div>
+
+                        <table>
+                            <tr>
+                                <th>1</th>
+                                <th>2</th>
+                                <th>3</th>
+                                <th>4</th>
+                                <th>5</th>
+                                <th>6</th>
+                                <th>7</th>
+                            </tr>
+                            <tr>
+                                <td colspan="7">
+                                    במידה והדירה שכורה, בדקו עם בעל הדירה איזה תכולה אתם מקבלים עם הבית.
+                                    הכינו רשימה עם כל הפריטים שיש לכם מהבית, הפריטים שיש לכם בדירה השכורה (בהנחה ואתם עוברים לדירה שכורה) ורכזו את כל הפריטים אותם אתם צריכים לרכוש.
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <th>8</th>
+                                <th>9</th>
+                                <th>10</th>
+                                <th>11</th>
+                                <th>12</th>
+                                <th>13</th>
+                                <th>14</th>
+                            </tr>
+
+                            <tr>
+                                <td colspan="2">תחילת אריזת החפצים שלא נמצאים בשימוש יום יומי.</td>
+                                <td colspan="2">המשך אריזת החפצים שלא נמצאים בשימוש יום יומי.</td>
+                                <td colspan="3">ימים אלה מוקדשים להתחלה של חיפוש באינטרנט/ חנויות, את החפצים הדרושים לכם לבית החדש</td>
+                            </tr>
+
+                            <tr>
+                                <th>15</th>
+                                <th>16</th>
+                                <th>17</th>
+                                <th>18</th>
+                                <th>19</th>
+                                <th>20</th>
+                                <th>21</th>
+                            </tr>
+
+                            <tr>
+                                <td colspan="3">תחילת אריזת חפצים אישיים</td>
+                                <td colspan="4">המשך אריזת חפצים אישיים</td>
+                            </tr>
+
+                            <tr>
+                                <th>22</th>
+                                <th>23</th>
+                                <th>24</th>
+                                <td rowspan="2" colspan="4">
+                                    <ul>
+                                        <strong> *טיפים </strong>
+                                        <li>בדקו באתרים ליד שניה (כגון יד 2/ אגורה) לרכישת פריטים מוזלים או פריטים בחינם למסירה</li>
+                                        <li>הימנעו מכפילות פריטים במידה ואתם באים מבתים שונים</li>
+                                        <li>
+                                            במידה ואין לכם פריטים רבים להעברה, נסו לבצע מעבר עצמאי
+                                            <a href="#bottomLinePacking" id="SelfMove">לחץ כאן למעבר עצמי.</a>
+                                        </li>
+                                    </ul>
+
+
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>יום זה מוקדש לסגירת הפריטים האחרונים אותם אתם צריכים לרכוש</td>
+                                <td>יום זה מוקדש לחפצים של הרגע האחרון לפני המעבר+ אריזת ארגז אחרון בו יהיו החפצים החשובים לכם לשימוש לימים הראשונים</td>
+                                <th style="font-size:20pt">מעבר דירה</th>
+                            </tr>
+                        </table>
+                        <div id="genericJump"></div>
+                        <div id="backgroundLine2"></div>
+                    </div>
+
+                    <section class="genericContent">
+                        <h3>תוכן מורחב על אריזה, הובלה ובירוקרטיה</h3>
+                        <div id="ariza">
+                            <section>
+                                <h4>אריזה עצמאית</h4>
+                                <ul>
+                                    <li>
+                                        <strong>הכינו "תוכן עניינים" </strong>
+                                        המרכז את כל הארגזים לפי מספרים (את המספרים כתבו בתוכן העניינים ועל הארגז עצמו). הוסיפו בתוכן העניינים את שם הארגז שיהיה לכם קל יותר בתהליך הפריקה.
+                                    </li>
+                                    <li>כשאורזים ארגז, מומלץ לכתוב עליו (על כל פאות הארגז) את סוג התכולה שיש בפנים בחלוקה לקטגוריות לפי חדרי הבית.</li>
+                                    <li>
+                                        כתיבת הקטגוריה "מטבח" למשל מספיקה אמנם לכתיבה על הארגז,
+                                        <strong>
+                                            אך בתוכן העניינים ציינו מהי התכולה המפורטת בכל ארגז,
+                                        </strong>
+                                        כדי שתרצו לחפש משהו ספציפי יהיה לכן קל הרבה יותר.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רכזו בצד ציוד הכרחי להתנהלות היום יומית.
+                                        </strong>
+                                        בסופו של דבר תאלצו לארוז הכל, אך ריכוז הפריטים הללו בצד יעזור לכם להתנהל ויש לארוז אותו בהדרגה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            ארזו תכשיטים ודברי ערך יקרים אתכם בתיק אישי.
+                                        </strong>
+                                        לא מומלץ בכלל לארוז אותם בקרטונים גם אם חברת ההובלה נראית לכם אמינה, כדאי להימנע ממצבים כאלה.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>טיפים לאריזת תכולה שבירה</h5>
+                                <ul>
+                                    <li>
+                                        במידה ויש ארגז שביר
+                                        <strong>
+                                            ציינו
+                                        </strong>
+                                        זאת על הארגז.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            עטפו
+                                        </strong>
+                                        כל פריט בנפרד בעיון, ומעל שימו פצפצים.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רפדו
+                                        </strong>
+                                        את כל דפנות הארגז בפצפצים או במגבת/ שמיכה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            אל תשאירו קרטון ריק,
+                                        </strong>
+
+                                        מלאו אותו עד הסוף כדי למנוע תזוזת פריטים בפנים שעלולה להישבר.
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת בגדים</h5>
+                                <ul>
+                                    <li>מומלץ להשתמש בשקיות ואקום להקטנת נפח הבגדים.</li>
+                                    <li>מומלץ לגלגל ביגוד דק ולעטוף בגומייה על מנת לחסוך במקום, ניתן גם לקפל או לשלב בין שתי האופציות. </li>
+                                    <li>במידה ומדובר על פרטי חורף כמו מעילים גדולים, מומלץ לפרוש אותם בתחתית או בחלק העליון של הארגז על מנת שיתפסו פחות מקום. </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת נוזלים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            וודאו
+                                        </strong>
+                                        שכל הבקבוקים סגורים היטב.
+                                    </li>
+                                    <li>מומלץ לעטוף את פיות הבקבוק בנייר דבק ולשים אותם בשקיות נפרדות.</li>
+                                    <li>כדאי לא לערבב את תכולת הנוזלים עם תכולה אחרת כדי למנוע הכתמה של בגדים או לכלוך של פריטים אחרים.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת ארגז ספרים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            השתמשו בארגז קטן ורצוי שיהיה קשיח.
+                                        </strong>
+                                        ארגזים גדולים של ספרים עלולים להיות כבדים מידי לנשיאה ועלולים להיקרע.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            חזקו
+                                        </strong>
+                                        את תחתית הארגז בנייר דבק כדי שלא יפתח.
+                                    </li>
+                                    <li>
+                                        סדרו את הספרים לפי גודל. ניתן להעמיד את הספרים (כמו על מדף) או להשכיבם.
+                                        הניחו את הספרים שדרה לשדרה.
+                                    </li>
+                                    <li>במידה ויש ספר חשוב ניתן לעטוף גם אותו בנייר עיתון.</li>
+                                    <li>מלאו את החללים שנוצרים בכדורי נייר עיתון על מנת לשמור על סידור אריזת הספרים.</li>
+                                </ul>
+
+                            </section>
+                            <section>
+                                <h4>חברות אריזה</h4>
+                                <p id="packingCompanies">
+                                    קיימות חברות שיעזרו לך לארוז את הבית בקלות, ויש כאלה שיעזרו לך גם לפרוק את תכולת הדירה בצורה מסודרת.
+                                    <a href="https://www.d.co.il/h-c4040-e0-p0-l0-t40035798,40035797.na2" target="_blank">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLinePacking"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            </section>
+
+                            <div id="backgroundLine3"></div>
+                        </div>
+
+                        <div id="hovala">
+                            <h4>הובלה עצמאית</h4>
+                            <p>
+                                אם אתם רוצים לחסוך בכסף, אתם יכולים לשכור רכב להובלת תכולת הדירה.
+                                השכרת רכב יכולה להיות אופציה טובה, אך יש לקחת בחשבון את כמות התכולה אותה אתם מעבירים. במידה ויש תכולה רבה אמנם תחסכו כ30-40% ממחיר ההובלה, אך לא לכולם יש את היכולת להעמיס ולפרוק לבד את כל הארגזים- מומלץ לקחת אתכם כמה חברים.
+                            </p>
+                            <h5>קיימות מספר דרכים להובלה עצמית</h5>
+                            <div id="selfMoving">
+                                <ul>
+                                    <li>השכרת רכב עם נהג- שירות שעולה כ250 ₪ לשעת עבודה כל שעה נוספת, תוספת תשלום של 200 ₪. התשלום כולל טווח שבין 5 עד 10 ק"מ, מידה והמעבר הוא בטווח רחוק יותר יש תוספת תשלום.</li>
+                                    <li>השכרת רכב בלי נהג- תשמשו כנהג וכסבל.</li>
+                                    <li>במידה והתכולה היא לא רבה מאוד- הובלה ברכבכם הפרטי או ברכב של חברים/ משפחה.</li>
+                                </ul>
+                            </div>
+                            <h5>האם כדאי לי?</h5>
+                            <p>
+                                יש לקחת בחשבון את כל הפרמטרים, דלק, זמן, מאמץ פיזי, הוצאת כספית על חומרי אריזה ומרחק הנסיעה. בעת מעבר דירה עם תכולה קטנה (למשל לדירה מאובזרת), ובמרחק לא גדול,
+                                יתכן שישתלם יותר להעביר ברכב פרטי או לשכור רכב להובלה. במידה ולא, מומלץ להשתמש בחברת הובלה.
+                                <br /><br />
+
+                                <strong>קיימות חברות להשכרת רכב להובלה עצמית,</strong>
+                                <a href="https://www.d.co.il/SearchResults?location=&tagIds=27990&sortType=3&tagIds=40033419" target="_blank" id="extraInfoMoving">
+                                    למידע נוסף והמלצות
+                                    לחץ כאן.
+                                </a>
+                            </p>
+                            <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+
+
+                            <h4>חברות הובלה</h4>
+                            <section>
+                                <h5>מחירים להובלת דירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>הובלת דירה</th>
+                                        <th id="cost">
+                                            מחיר בש"ח
+                                            <ul>
+                                                <li>המחיר כולל טווח של עד 30 ק"מ</li>
+                                                <li>הובלה בבניינים עם מעלית</li>
+                                                <li>המחיר לא כולל דירות עם נגישות בעייתית</li>
+                                            </ul>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>חדר אחד</td>
+                                        <td>800-1,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 חדרים</td>
+                                        <td>1,200-2,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 חדרים</td>
+                                        <td>1,600-2,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 חדרים</td>
+                                        <td>1,800-3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 חדרים</td>
+                                        <td>2,200-4,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 חדרים</td>
+                                        <td>3,500-5,500</td>
+                                    </tr>
+
+                                </table>
+                            </section>
+
+                            <section>
+                                <h5>המלצה לטיפ למובילים</h5>
+                                <p>הטיפ המקובל הוא בטווח של 50-100 ש"ח לכל אחד מהמובילים</p>
+                            </section>
+                            <section>
+                                <h5>מעבר דירה- מקרים מיוחדים ותוספות להעברת הדירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>קטגוריה</th>
+                                        <th>מחיר בש"ח</th>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בסוף חודש או בתחילתו</td>
+                                        <td>10-20% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בחודשים יולי- אוגוסט</td>
+                                        <td>15-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עם מנוף- מחיר לשעת עבודה</td>
+                                        <td>300-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה לבניין בלי מעלית</td>
+                                        <td>20-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עד 100 ק"מ- תוספת למחיר ההובלה</td>
+                                        <td>1,500-3,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>פירוק והרכבת ארון</td>
+                                        <td>200-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה של פריט בודד(מקרר, מיטה, ספה, מכונת כביה ועוד)</td>
+                                        <td>200-600</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">שירותי אריזה</th>
+                                    </tr>
+                                    <tr>
+                                        <td>מחיר לארגז בודד</td>
+                                        <td>25-50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>אריזת ציוד שביר (מחיר לארגז)</td>
+                                        <td>30-60</td>
+                                    </tr>
+                                </table>
+                                <p><strong>בהתאם לתוכן העניינים שכתבתם, אל תשכחו להנחות את המוביל להניח את הארגזים בחלוקה לחדרים השונים בבית בהתאמה!</strong></p>
+                            </section>
+
+                            <section>
+                                <h4>חברות הובלה הנותנות שירות בכל הארץ</h4>
+                                <p>
+                                    <a href="https://www.d.co.il/h-c35840-e0-p0-l0-t40035693.na1" target="_blank" id="hCompaniesInfo">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+                            </section>
+                            <div id="backgroundLine4"></div>
+                        </div>
+                        <div id="birokratia">
+                            <h4>סידור בירוקרטיה באופן עצמאי</h4>
+                            <section>
+                                <h4>לבד</h4>
+                                <h5>מים</h5>
+                                <h6>קניית דירה</h6>
+                                <ul>
+                                    <li>יש לצרף את פרטי הרוכש יחד עם ההצהרה על מצב מד-המים בשעון המים של הדירה בצירוף צילום 2 תעודות הזהות עם ספח פתוח לרוחב.</li>
+                                    <li>יש לשים לב, שכאשר עוברים לדירה חדשה דרך חשבון המים משלמים גם התקנת שעון מים חדש. *בעת רישום חשבון מים יש להצטייד בספח תעודת הזהות של כל בני הבית.</li>
+                                    <li>כאשר קונים דירה מבעלות קודמת, יש לברר על טופס "החלפת משלם" על חשבון המים (לדוגמא עיריית מודיעין).</li>
+                                    <li>מומלץ לברר כי לבעל הדירה הקודמת אין חובות בעירייה לגבי תשלום המים.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>על השוכר לחתום יחד עם בעל הדירה על הצהרה בדבר קריאת מונה וכן הצהרה שכעת הוא הצרכן הנוכחי.</p>
+                                <p>
+                                    הטופס הנוכחי זהה לשכירת וקניית דירה
+                                    <br /> *יש לשים לב כי הטופס משתנה בין עירייה לעירייה.<br />
+
+                                    <a href="forms/טופס העברת משלם חשבון מים.pdf" target="_blank"><img src="images/html/waterForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת משלם חשבון מים" /></a>
+                                </p>
+                                <p id="bigPicWater">*לחץ על התמונה למעבר לטופס</p>
+
+
+                            </section>
+                            <section>
+                                <h5>גז</h5>
+                                <p>יש לשים לב אם מדובר במעבר לבית פרטי או בניין משותף. בעת בניין משותף מתקיים כל מה שכתוב במים, אם הבית הוא פרטי יש להתייחס לבלוני הגז- במידה וריקים לרכוש חדשים</p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/טופס העברת בעלות גז.pdf" target="_blank" id="gasFormIngo"><img src="images/html/gasForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת בעלות גז" /></a>
+                                <p id="gazPic">*לחץ על התמונה למעבר לטופס</p>
+                            </section>
+
+                            <h5>חשמל</h5>
+                            <section>
+                                <h6>קניית דירה</h6>
+                                <p>כדי להעביר חשבון חשמל הדייר החדש ירשום את מצב המונה, יתקשר למרכז השרות 103, וימסור את הנתונים הבאים: מספר החוזה (שמופיע בחלקו העליון של חשבון החשמל), מצב המונה ופרטים אישיים של הלקוח (שם, מספר תעודת זהות, וטלפון). החשבון הבא ישלח על שמו. </p>
+                                <p>
+                                    טופס רישום לקוח חדש- חברת החשמל
+                                    <br />
+                                    <a href="forms/רישום לקוח חדש- חשמל.pdf" target="_blank"><img src="images/html/electricityNewForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="רישום לקוח חדש - חברת החשמל" /></a>
+                                </p>
+                                <p id="hashmalPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>כפי שכתוב בקניית דירה. בנוסף, יש לוודא כי השוכר חותם על הצהרה בדבר קריאת מונה לפני התשלום והחלפת המונה אצל העירייה. </p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/החלפת שם לקוח חשמל.pdf" target="_blank" id="newHashForm"><img src="images/html/electricityForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="החלפת שם לקוח- חברת החשמל" /></a>
+                                <p id="newHashPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h5>עדכוני כתובת והעברת שירותי ספק</h5>
+                                <p>כאשר עוברים דירה יש לגשת לרשות מרשם האוכלוסין ולעדכן את הכתובת החדשה בצירוף תעודת הזהות של כל דיירי הבית.</p>
+                                <p>הטופס-</p>
+                                <a href="forms/טופס שינוי מען.pdf" target="_blank" id="maanForm"><img src="images/html/adressForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="טופס שינוי מען" /></a>
+                                <p id="maanPic">*לחץ על התמונה למעבר לטופס</p>
+
+                                <ul>
+                                    <li>כשבועיים לפני המעבר יש ליצור קשר עם חברות הכבלים והטלפון להעברת הכבלים והעתקת קו הטלפון שלכם לדירה החדשה. עלות התקנת/העברת קו תעשה בחינם או במחיר עשרות שקלים בודדים (בהתאם לחוקי החברה).</li>
+                                    <li>מומלץ להשתמש בשירות "דואר עוקב" של דואר ישראל בכדי להבטיח שכל הדואר יגיע למקום מגוריכם החדש בלבד.</li>
+                                    <li>כל עוד נשארים באותה תשתית אינטרנט אין מחויבות להודיע לספק האינטרנט על המעבר  אך מומלץ מאד (במקרה שהוא אינו אותו ספק של הכבלים והטלפון).</li>
+                                    <li>ישנה אפשרות לבצע העברת כתובת ללא עלות בצורה מקוונת באתר משרד הפנים, <a href="https://www.gov.il/he/service/changing_address" id="govLink" aria-label="לחץ למעבר לאתר" target="_blank">לחץ כאן לכניסה לאתר.</a> </li>
+                                </ul>
+                            </section>
+
+
+                            <h4>סידור בירוקרטיה בעזרת חברה</h4>
+                            <table>
+                                <tr>
+                                    <th>שם החברה</th>
+                                    <th>טלפון</th>
+                                    <th>שעות פעילות</th>
+                                </tr>
+                                <tr>
+                                    <th>avarty</th>
+                                    <td>מייל- team@avarty.co.il</td>
+                                    <td>ימים א'-ה' בין השעות 8:00-16:00</td>
+                                </tr>
+                                <tr>
+                                    <th>over bait</th>
+                                    <td>053-278-1178</td>
+                                    <td>שירות "עובר בית" מתבצע באופן מקוון ועל כן ניתן להירשם לשרות בכל נקודת זמן ומכל מקום</td>
+                                </tr>
+                                <tr>
+                                    <th>דואר ישראל</th>
+                                    <td>171 מכל טלפון</td>
+                                    <td>בהתאם לשעות הפתיחה של סניף הדואר הקרוב לביתכם.</td>
+                                </tr>
+
+
+                            </table>
+                            <div id="bottomLineBiroc"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            <footer>
+                                © כל הזכויות שמורות ליוצרי
+                                ez2move
+                            </footer>
+                        </div>
+                    </section>
+                </div>
+
+
+            </article>
+
+            <!--אדם עם מוגבלות-->
+
+            <article id="disable3" class="dragend-page">
+                <header id="disableHeader" class="firstFrames">
+                    <div id="scrollUpPointD" class="scrollUpPointDes"></div>
+                    <div id="coupleDivAbsolute">
+                        <img src="images/html/bigDisableIcon.png" alt="אדם עם מוגבלות" width="500" class="bigCoupleIcon" />
+                        <h2 id="bigDisableText">אדם עם מוגבלות</h2>
+                        <a href="#readMoreButton1" id="readMoreButton1" alt="קרא עוד">קרא עוד</a>
+                    </div>
+
+                </header>
+
+                <div class="content">
+                    <div id="backgroundLine5"></div>
+                    <div id="disableContent">
+                        <div id="goUpDisable" class="goUpDes" onclick="scrollUpD()" alt="קפוץ לראש העמוד" aria-label="לחצן הקפץ לראש העמוד"></div>
+                        <article>
+                            <section id="contentStart">
+                                <h3>  התאמנו עבורכם טיפים שיהפכו את המעבר לקל יותר ומהיר יותר. </h3>
+                                <a href="#backgroundLine5" id="contentButton">לצפייה בתוכן זה, לחץ כאן</a>
+                                <a href="#disableJumpTo" id="genericButton">לצפייה בתוכן מורחב, לחץ כאן</a>
+                            </section>
+                            <div id="boxPic"></div>
+                            <p id="hDis">טיפים למעבר עצמאי</p>
+                            <div id="firstUlDisable">
+                                <ul>
+                                    <li>במידת היכולת, כדאי לארוז חפצים קטנים או קלים</li>
+                                    <li>
+                                        המידע שכתוב בהמשך יכול לעזור לכם לדעת את זכויותיכם על מנת להקל עליכם.
+                                        <strong> מומלץ לעיין בזכויות</strong>
+                                        ולסדר כמה שיותר זמן מראש את כל הבירוקרטיה הדרושה.
+                                    </li>
+                                    <li>
+                                        <strong>	נסו להיעזר</strong>
+                                        בחברים או במשפחה בכל מה שקשור למעבר הדירה, החל מאריזה ועד להובלה.
+                                    </li>
+                                </ul>
+                            </div>
+                            <p>
+                                בנוסף לכך, ריכזנו עבורכם את חברות ההובלה המומלצות, חברות אריזה וחברות שניתן להיעזר בהן לסידור הבירוקרטיה.
+                                <br />
+                                *יש לשים לב כי המידע הוא כללי ויש לבדוק את הזכאות האישית.
+                            </p>
+                            <section style="width: 800px;">
+                                <h4>הנחה בארנונה- מסים עירוניים</h4>
+                                <p>
+                                    נכים בדרגות נכות 10% ומעלה זכאים להנחה בארנונה (המוסד לביטוח לאומי מעביר מידי שנה רשימת זכאים להנחה). גובה ההנחה נקבע לפי צפיפות הדיור ע"י הרשויות המקומיות.
+                                    במידה ודרגת הנכות היא 100%, תינתן זכאות להחזר נוסף של 40% על תשלומי הארנונה ששולמו לאחר ההנחה. לקבלת ההחזר יש לפנות לאגף איבה במשרד הראשי- ויצמן 13 ירושלים, לא לשכוח להביא עמכם את האישור על התשלום (לאחר ההנחה).
+                                </p>
+                            </section>
+                            <section style="width: 800px;">
+                                <h4>פטור מאגרת רישוי בטאבו</h4>
+                                <p>אנשים עם מוגבלות ובני זוגם פטורים מאגרת רישום משכנתא ושירות ברשם המקרקעין וזאת במידה והם עונים על הגדרת נכה בתקנות המקרקעין.</p>
+                            </section>
+                            <section style="width: 800px;">
+                                <h4>הנחה לנכים בתשלומי טלפון של בזק</h4>
+                                <p>אדם שנקבע לו נכות רפואית בשיעור של 80% ומעלה, זכאים להנחות בתשלומי הטלפון של חברת "בזק". ההנחות כוללות התקנה והעתקה של מכשיר הטלפון ובתשלום החודשי, מיום הפנייה ולא רטרואקטיבית.</p>
+                            </section>
+                            <section>
+                                <h5>דגשים</h5>
+                                <p>
+                                    <div id="disSecPara">
+                                        <ul>
+                                            <li>ההנחה ניתנת למי שמקבל קצבת נכות כללית בשיעור של 75% ונקבעה לו נכות רפואית בשיעור של 80% ומעלה.</li>
+                                            <li>ההנחה היא בשיעור של כ50% מדמי ההתקנה או מדמי ההעתקה של קו הטלפון.</li>
+                                            <li>ההנחה בתשלום החודשי מתבצעת בשני מסלולים, בשניהם ניתן פטור מדמי השימוש הקבועים. במסלול אחד מקבלים  300 דקות שיחה לחודש בעלות של 17 ₪ לחודש, במסלול השני מקבלים  600 דקות שיחה לחודש בעלות של 32 ש"ח לחודש.</li>
+                                            <li>משפחה עם שני זכאים תוכל לקבל אחד מבין שני המסלולים הבאים: מימון מלא עבור חבילת ה300 דקות, או סבסוד של חבילת ה600 דקות במחיר של 15 ₪ (לעומת 32 ₪).</li>
+                                        </ul>
+                                    </div>
+                                </p>
+                                <h4>טופס לבקשת הנחה</h4>
+
+                                <a href="forms/הנחה בבזק.pdf" target="_blank">
+                                    <img src="images/html/discountForm.JPG" width="200" style="margin-right:20px" aria-label="לחץ על התמונה למעבר לטופס" alt="טופס הנחה בבזק" />
+                                </a>
+                                <p id="disableJumpTo">*לחץ על התמונה למעבר לטופס</p>
+                            </section>
+                            <div id="backgroundLine6"></div>
+                        </article>
+                    </div>
+                    <section class="genericContent">
+                        <h3>תוכן מורחב על אריזה, הובלה ובירוקרטיה</h3>
+                        <div id="ariza">
+                            <section>
+                                <h4>אריזה עצמאית</h4>
+                                <ul>
+                                    <li>
+                                        <strong>הכינו "תוכן עניינים" </strong>
+                                        המרכז את כל הארגזים לפי מספרים (את המספרים כתבו בתוכן העניינים ועל הארגז עצמו). הוסיפו בתוכן העניינים את שם הארגז שיהיה לכם קל יותר בתהליך הפריקה.
+                                    </li>
+                                    <li>כשאורזים ארגז, מומלץ לכתוב עליו (על כל פאות הארגז) את סוג התכולה שיש בפנים בחלוקה לקטגוריות לפי חדרי הבית.</li>
+                                    <li>
+                                        כתיבת הקטגוריה "מטבח" למשל מספיקה אמנם לכתיבה על הארגז,
+                                        <strong>
+                                            אך בתוכן העניינים ציינו מהי התכולה המפורטת בכל ארגז,
+                                        </strong>
+                                        כדי שתרצו לחפש משהו ספציפי יהיה לכן קל הרבה יותר.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רכזו בצד ציוד הכרחי להתנהלות היום יומית.
+                                        </strong>
+                                        בסופו של דבר תאלצו לארוז הכל, אך ריכוז הפריטים הללו בצד יעזור לכם להתנהל ויש לארוז אותו בהדרגה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            ארזו תכשיטים ודברי ערך יקרים אתכם בתיק אישי.
+                                        </strong>
+                                        לא מומלץ בכלל לארוז אותם בקרטונים גם אם חברת ההובלה נראית לכם אמינה, כדאי להימנע ממצבים כאלה.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>טיפים לאריזת תכולה שבירה</h5>
+                                <ul>
+                                    <li>
+                                        במידה ויש ארגז שביר
+                                        <strong>
+                                            ציינו
+                                        </strong>
+                                        זאת על הארגז.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            עטפו
+                                        </strong>
+                                        כל פריט בנפרד בעיון, ומעל שימו פצפצים.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רפדו
+                                        </strong>
+                                        את כל דפנות הארגז בפצפצים או במגבת/ שמיכה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            אל תשאירו קרטון ריק,
+                                        </strong>
+
+                                        מלאו אותו עד הסוף כדי למנוע תזוזת פריטים בפנים שעלולה להישבר.
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת בגדים</h5>
+                                <ul>
+                                    <li>מומלץ להשתמש בשקיות ואקום להקטנת נפח הבגדים.</li>
+                                    <li>מומלץ לגלגל ביגוד דק ולעטוף בגומייה על מנת לחסוך במקום, ניתן גם לקפל או לשלב בין שתי האופציות. </li>
+                                    <li>במידה ומדובר על פרטי חורף כמו מעילים גדולים, מומלץ לפרוש אותם בתחתית או בחלק העליון של הארגז על מנת שיתפסו פחות מקום. </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת נוזלים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            וודאו
+                                        </strong>
+                                        שכל הבקבוקים סגורים היטב.
+                                    </li>
+                                    <li>מומלץ לעטוף את פיות הבקבוק בנייר דבק ולשים אותם בשקיות נפרדות.</li>
+                                    <li>כדאי לא לערבב את תכולת הנוזלים עם תכולה אחרת כדי למנוע הכתמה של בגדים או לכלוך של פריטים אחרים.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת ארגז ספרים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            השתמשו בארגז קטן ורצוי שיהיה קשיח.
+                                        </strong>
+                                        ארגזים גדולים של ספרים עלולים להיות כבדים מידי לנשיאה ועלולים להיקרע.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            חזקו
+                                        </strong>
+                                        את תחתית הארגז בנייר דבק כדי שלא יפתח.
+                                    </li>
+                                    <li>
+                                        סדרו את הספרים לפי גודל. ניתן להעמיד את הספרים (כמו על מדף) או להשכיבם.
+                                        הניחו את הספרים שדרה לשדרה.
+                                    </li>
+                                    <li>במידה ויש ספר חשוב ניתן לעטוף גם אותו בנייר עיתון.</li>
+                                    <li>מלאו את החללים שנוצרים בכדורי נייר עיתון על מנת לשמור על סידור אריזת הספרים.</li>
+                                </ul>
+
+                            </section>
+                            <section>
+                                <h4>חברות אריזה</h4>
+                                <p id="packingCompanies">
+                                    קיימות חברות שיעזרו לך לארוז את הבית בקלות, ויש כאלה שיעזרו לך גם לפרוק את תכולת הדירה בצורה מסודרת.
+                                    <a href="https://www.d.co.il/h-c4040-e0-p0-l0-t40035798,40035797.na2" target="_blank">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLinePacking"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            </section>
+
+                            <div id="backgroundLine3"></div>
+                        </div>
+
+                        <div id="hovala">
+                            <h4>הובלה עצמאית</h4>
+                            <p>
+                                אם אתם רוצים לחסוך בכסף, אתם יכולים לשכור רכב להובלת תכולת הדירה.
+                                השכרת רכב יכולה להיות אופציה טובה, אך יש לקחת בחשבון את כמות התכולה אותה אתם מעבירים. במידה ויש תכולה רבה אמנם תחסכו כ30-40% ממחיר ההובלה, אך לא לכולם יש את היכולת להעמיס ולפרוק לבד את כל הארגזים- מומלץ לקחת אתכם כמה חברים.
+                            </p>
+                            <h5>קיימות מספר דרכים להובלה עצמית</h5>
+                            <div id="selfMoving">
+                                <ul>
+                                    <li>השכרת רכב עם נהג- שירות שעולה כ250 ₪ לשעת עבודה כל שעה נוספת, תוספת תשלום של 200 ₪. התשלום כולל טווח שבין 5 עד 10 ק"מ, מידה והמעבר הוא בטווח רחוק יותר יש תוספת תשלום.</li>
+                                    <li>השכרת רכב בלי נהג- תשמשו כנהג וכסבל.</li>
+                                    <li>במידה והתכולה היא לא רבה מאוד- הובלה ברכבכם הפרטי או ברכב של חברים/ משפחה.</li>
+                                </ul>
+                            </div>
+                            <h5>האם כדאי לי?</h5>
+                            <p>
+                                יש לקחת בחשבון את כל הפרמטרים, דלק, זמן, מאמץ פיזי, הוצאת כספית על חומרי אריזה ומרחק הנסיעה. בעת מעבר דירה עם תכולה קטנה (למשל לדירה מאובזרת), ובמרחק לא גדול,
+                                יתכן שישתלם יותר להעביר ברכב פרטי או לשכור רכב להובלה. במידה ולא, מומלץ להשתמש בחברת הובלה.
+                                <br /><br />
+
+                                <strong>קיימות חברות להשכרת רכב להובלה עצמית,</strong>
+                                <a href="https://www.d.co.il/SearchResults?location=&tagIds=27990&sortType=3&tagIds=40033419" target="_blank" id="extraInfoMoving">
+                                    למידע נוסף והמלצות
+                                    לחץ כאן.
+                                </a>
+                            </p>
+                            <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+
+
+                            <h4>חברות הובלה</h4>
+                            <section>
+                                <h5>מחירים להובלת דירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>הובלת דירה</th>
+                                        <th id="cost">
+                                            מחיר בש"ח
+                                            <ul>
+                                                <li>המחיר כולל טווח של עד 30 ק"מ</li>
+                                                <li>הובלה בבניינים עם מעלית</li>
+                                                <li>המחיר לא כולל דירות עם נגישות בעייתית</li>
+                                            </ul>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>חדר אחד</td>
+                                        <td>800-1,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 חדרים</td>
+                                        <td>1,200-2,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 חדרים</td>
+                                        <td>1,600-2,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 חדרים</td>
+                                        <td>1,800-3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 חדרים</td>
+                                        <td>2,200-4,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 חדרים</td>
+                                        <td>3,500-5,500</td>
+                                    </tr>
+
+                                </table>
+                            </section>
+
+                            <section>
+                                <h5>המלצה לטיפ למובילים</h5>
+                                <p>הטיפ המקובל הוא בטווח של 50-100 ש"ח לכל אחד מהמובילים</p>
+                            </section>
+                            <section>
+                                <h5>מעבר דירה- מקרים מיוחדים ותוספות להעברת הדירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>קטגוריה</th>
+                                        <th>מחיר בש"ח</th>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בסוף חודש או בתחילתו</td>
+                                        <td>10-20% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בחודשים יולי- אוגוסט</td>
+                                        <td>15-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עם מנוף- מחיר לשעת עבודה</td>
+                                        <td>300-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה לבניין בלי מעלית</td>
+                                        <td>20-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עד 100 ק"מ- תוספת למחיר ההובלה</td>
+                                        <td>1,500-3,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>פירוק והרכבת ארון</td>
+                                        <td>200-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה של פריט בודד(מקרר, מיטה, ספה, מכונת כביה ועוד)</td>
+                                        <td>200-600</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">שירותי אריזה</th>
+                                    </tr>
+                                    <tr>
+                                        <td>מחיר לארגז בודד</td>
+                                        <td>25-50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>אריזת ציוד שביר (מחיר לארגז)</td>
+                                        <td>30-60</td>
+                                    </tr>
+                                </table>
+                                <p><strong>בהתאם לתוכן העניינים שכתבתם, אל תשכחו להנחות את המוביל להניח את הארגזים בחלוקה לחדרים השונים בבית בהתאמה!</strong></p>
+                            </section>
+
+                            <section>
+                                <h4>חברות הובלה הנותנות שירות בכל הארץ</h4>
+                                <p>
+                                    <a href="https://www.d.co.il/h-c35840-e0-p0-l0-t40035693.na1" target="_blank" id="hCompaniesInfo">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+                            </section>
+                            <div id="backgroundLine4"></div>
+                        </div>
+                        <div id="birokratia">
+                            <h4>סידור בירוקרטיה באופן עצמאי</h4>
+                            <section>
+                                <h4>לבד</h4>
+                                <h5>מים</h5>
+                                <h6>קניית דירה</h6>
+                                <ul>
+                                    <li>יש לצרף את פרטי הרוכש יחד עם ההצהרה על מצב מד-המים בשעון המים של הדירה בצירוף צילום 2 תעודות הזהות עם ספח פתוח לרוחב.</li>
+                                    <li>יש לשים לב, שכאשר עוברים לדירה חדשה דרך חשבון המים משלמים גם התקנת שעון מים חדש. *בעת רישום חשבון מים יש להצטייד בספח תעודת הזהות של כל בני הבית.</li>
+                                    <li>כאשר קונים דירה מבעלות קודמת, יש לברר על טופס "החלפת משלם" על חשבון המים (לדוגמא עיריית מודיעין).</li>
+                                    <li>מומלץ לברר כי לבעל הדירה הקודמת אין חובות בעירייה לגבי תשלום המים.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>על השוכר לחתום יחד עם בעל הדירה על הצהרה בדבר קריאת מונה וכן הצהרה שכעת הוא הצרכן הנוכחי.</p>
+                                <p>
+                                    הטופס הנוכחי זהה לשכירת וקניית דירה
+                                    <br /> *יש לשים לב כי הטופס משתנה בין עירייה לעירייה.<br />
+
+                                    <a href="forms/טופס העברת משלם חשבון מים.pdf" target="_blank"><img src="images/html/waterForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת משלם חשבון מים" /></a>
+                                </p>
+                                <p id="bigPicWater">*לחץ על התמונה למעבר לטופס</p>
+
+
+                            </section>
+                            <section>
+                                <h5>גז</h5>
+                                <p>יש לשים לב אם מדובר במעבר לבית פרטי או בניין משותף. בעת בניין משותף מתקיים כל מה שכתוב במים, אם הבית הוא פרטי יש להתייחס לבלוני הגז- במידה וריקים לרכוש חדשים</p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/טופס העברת בעלות גז.pdf" target="_blank" id="gasFormIngo"><img src="images/html/gasForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת בעלות גז" /></a>
+                                <p id="gazPic">*לחץ על התמונה למעבר לטופס</p>
+                            </section>
+
+                            <h5>חשמל</h5>
+                            <section>
+                                <h6>קניית דירה</h6>
+                                <p>כדי להעביר חשבון חשמל הדייר החדש ירשום את מצב המונה, יתקשר למרכז השרות 103, וימסור את הנתונים הבאים: מספר החוזה (שמופיע בחלקו העליון של חשבון החשמל), מצב המונה ופרטים אישיים של הלקוח (שם, מספר תעודת זהות, וטלפון). החשבון הבא ישלח על שמו. </p>
+                                <p>
+                                    טופס רישום לקוח חדש- חברת החשמל
+                                    <br />
+                                    <a href="forms/רישום לקוח חדש- חשמל.pdf" target="_blank"><img src="images/html/electricityNewForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="רישום לקוח חדש - חברת החשמל" /></a>
+                                </p>
+                                <p id="hashmalPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>כפי שכתוב בקניית דירה. בנוסף, יש לוודא כי השוכר חותם על הצהרה בדבר קריאת מונה לפני התשלום והחלפת המונה אצל העירייה. </p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/החלפת שם לקוח חשמל.pdf" target="_blank" id="newHashForm"><img src="images/html/electricityForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="החלפת שם לקוח- חברת החשמל" /></a>
+                                <p id="newHashPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h5>עדכוני כתובת והעברת שירותי ספק</h5>
+                                <p>כאשר עוברים דירה יש לגשת לרשות מרשם האוכלוסין ולעדכן את הכתובת החדשה בצירוף תעודת הזהות של כל דיירי הבית.</p>
+                                <p>הטופס-</p>
+                                <a href="forms/טופס שינוי מען.pdf" target="_blank" id="maanForm"><img src="images/html/adressForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="טופס שינוי מען" /></a>
+                                <p id="maanPic">*לחץ על התמונה למעבר לטופס</p>
+
+                                <ul>
+                                    <li>כשבועיים לפני המעבר יש ליצור קשר עם חברות הכבלים והטלפון להעברת הכבלים והעתקת קו הטלפון שלכם לדירה החדשה. עלות התקנת/העברת קו תעשה בחינם או במחיר עשרות שקלים בודדים (בהתאם לחוקי החברה).</li>
+                                    <li>מומלץ להשתמש בשירות "דואר עוקב" של דואר ישראל בכדי להבטיח שכל הדואר יגיע למקום מגוריכם החדש בלבד.</li>
+                                    <li>כל עוד נשארים באותה תשתית אינטרנט אין מחויבות להודיע לספק האינטרנט על המעבר  אך מומלץ מאד (במקרה שהוא אינו אותו ספק של הכבלים והטלפון).</li>
+                                    <li>ישנה אפשרות לבצע העברת כתובת ללא עלות בצורה מקוונת באתר משרד הפנים, <a href="https://www.gov.il/he/service/changing_address" id="govLink" aria-label="לחץ למעבר לאתר" target="_blank">לחץ כאן לכניסה לאתר.</a> </li>
+                                </ul>
+                            </section>
+
+
+                            <h4>סידור בירוקרטיה בעזרת חברה</h4>
+                            <table>
+                                <tr>
+                                    <th>שם החברה</th>
+                                    <th>טלפון</th>
+                                    <th>שעות פעילות</th>
+                                </tr>
+                                <tr>
+                                    <th>avarty</th>
+                                    <td>מייל- team@avarty.co.il</td>
+                                    <td>ימים א'-ה' בין השעות 8:00-16:00</td>
+                                </tr>
+                                <tr>
+                                    <th>over bait</th>
+                                    <td>053-278-1178</td>
+                                    <td>שירות "עובר בית" מתבצע באופן מקוון ועל כן ניתן להירשם לשרות בכל נקודת זמן ומכל מקום</td>
+                                </tr>
+                                <tr>
+                                    <th>דואר ישראל</th>
+                                    <td>171 מכל טלפון</td>
+                                    <td>בהתאם לשעות הפתיחה של סניף הדואר הקרוב לביתכם.</td>
+                                </tr>
+
+
+                            </table>
+                            <div id="bottomLineBiroc"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            <footer>
+                                © כל הזכויות שמורות ליוצרי
+                                ez2move
+                            </footer>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+
+
+            <!--משפחה-->
+            <article id="family4" class="dragend-page">
+                <header id="familyHead" class="firstFrames">
+                    <div id="scrollUpPointF" class="scrollUpPointDes"></div>
+                    <div id="coupleDivAbsolute">
+                        <img src="images/html/bigFamilyIcon.png" alt="משפחה" width="450" class="bigCoupleIcon" />
+                        <h2 id="bigFamilyText">משפחה</h2>
+                        <a href="#readMoreButton2" id="readMoreButton2" alt="קרא עוד">קרא עוד</a>
+                    </div>
+
+                </header>
+                <div class="content">
+                    <div id="backgroundLine8"></div>
+
+                    <div id="familyContent">
+                        <div id="goUpFamily" class="goUpDes" onclick="scrollUpF()" alt="קפוץ לראש העמוד" aria-label="לחצן הקפץ לראש העמוד"></div>
+                        <article>
+                            <section id="contentStart">
+                                <h3>  התאמנו עבורכם טיפים שיהפכו את המעבר לקל יותר ומהיר יותר. </h3>
+                                <a href="#backgroundLine8" id="contentButton">לצפייה בתוכן זה, לחץ כאן</a>
+                                <a href="#lastLineJumpFamily" id="genericButton">לצפייה בתוכן מורחב, לחץ כאן</a>
+
+                            </section><div id="boxPic"></div>
+
+                            <section id="firstParaFamily" class="familyP">
+                                <h4>טיפים למעבר עם הילדים</h4>
+                                <ul>
+                                    <li>	סוף השנה ותחילת החופש הגדול זו התקופה האופטימאלית למעבר דירה עם ילדים מכיוון שסוף השנה מהווה גם את סיום שנה במסגרות השונות כמו גן, בי"ס או חוגים חברתיים שונים, זו תקופה של מעברים.</li>
+                                    <li>יום המעבר מומלץ לתאם עם מישהו שיאסוף אותם מהגנים/ בתי הספר כי קיים סיכוי שהבית לא יהיה מוכן עבורם. </li>
+                                </ul>
+                            </section>
+                            <section class="familyP">
+                                <h4>אריזה</h4>
+                                <ul>
+                                    <li>	בימי האריזה מומלץ להיעזר בבני המשפחה או חברים בשמירה על הילדים, על מנת לקצר וליעל את זמני האריזה.</li>
+                                    <li>	כדאי להכין תיק עם הדברים הדחופים ביותר שחשוב שיהיו זמינים כבר ביום (ובלילה) הראשון בבית החדש. למשל כרית ופיג'מה מוכרת לילדים, מגבות רחצה, מברשות שיניים, טיטולים, מוצצים, חפץ מעבר אם יש וכד'. </li>
+                                    <li>	כשהילדים קצת גדולים (6+) יכול להיות טוב לשתף אותם בשלבים שונים של מעבר הדירה: אפשר לתת להם לבחור את החדר שיהיה שלהם בבית החדש, הם יכולים לעזור בניקיונות או בצביעה של הבית החדש, הם יכולים לארוז את הצעצועים והחפצים שלהם (אפשר לתת להם לקשט את הארגזים עם החפצים שלהם במדבקות יפות כדי שיוכלו לזהות אותם לאחר מכן, ולהרגיש חלק מהמעבר) .</li>
+                                </ul>
+                            </section>
+                            <section id="LuzFamily">
+                                <h4>לוח זמנים</h4>
+                                <p>
+                                    לו"ז אריזה למשפחה בעלת 4-8 נפשות, להורים עובדים עד השעה 16:00-17:00 בכל יום (מלבד שבת). מדובר בלו"ז אריזה של כ23 ימי אריזה בידיעה כי קיימים שני הורים פעילים אשר יכולים לארוז.
+                                    מומלץ להתחיל לארוז כחודש שלם לפני המעבר ע"מ לאפשר פריסה רחבה יותר לאורך החודש במידה והלו"ז הנ"ל לא מתאפשר מסיבות מסוימות.
+                                </p>
+                            </section>
+                            <table>
+                                <tr>
+                                    <th colspan="7">שבוע 1</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">
+                                        כל השבוע הראשון מוקדש לאריזת חדרי הילדים.
+                                        * מומלץ להשאיר בחדרי הילדים כמה צעצועים אהובים ולארוז אותם ביום האחרון, שאלו את הילדים אילו משחקים הם היו רוצים לשמור עד למעבר ואילו לסגור בארגז.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">שבוע 2</th>
+                                </tr>
+                                <tr>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>11</th>
+                                    <th>12</th>
+                                    <th>13</th>
+                                    <th>14</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="2">יומיים אלה מוקדשים לאריזת חדר ההורים.</td>
+                                    <td colspan="2">יומיים אלה מוקדשים לאריזת חדר ארונות.</td>
+                                    <td>יום זה מוקדש לאריזת חדרי שירותים ומקלחת.</td>
+                                    <td colspan="2">
+                                        יומיים אלה מוקדשים לאריזת חדר העבודה.
+                                        * מומלץ לתייק את כל המסמכים במידה והם פזורים.
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">שבוע 3</th>
+                                </tr>
+                                <tr>
+                                    <th>15</th>
+                                    <th>16</th>
+                                    <th>17</th>
+                                    <th>18</th>
+                                    <th>19</th>
+                                    <th>20</th>
+                                    <th>21</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="3">שלושה ימים אלה מוקדשים לאריזת המחסן. </td>
+                                    <td colspan="4" style="padding-right: 11px;">
+                                        ארבעת ימים אלה מוקדשים לאריזת המטבח.
+                                        <ul style="margin-right: 27px;list-style: none; width: 426px;">
+                                            <li>
+                                                -
+                                                מומלץ להתחיל לארוז כלים שאינם בשימוש יום-יומי כמו למשל
+                                                כלי מטבח לחגים.
+                                            </li>
+                                            <li>-צרכו את המזון הרטוב שפחות נוח להעביר אותו. </li>
+                                            <li>-מזון שאינו דורש קירור (שימורים למשל) ניתן להתחיל לארוז.</li>
+                                            <li>
+                                                -
+                                                לארוז את כלי המטבח השבירים טוב טוב.
+                                                <a href="#shavirJump" id="shavirTip">למעבר לטיפים לאריזת חפצים שבירים לחץ כאן.</a>
+                                            </li>
+                                            <li>-מומלץ לנקות כל כלי שמכניסים לארגז.</li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="3">שבוע 4</th>
+
+                                    <td rowspan="3" colspan="4">
+                                        <ul style="margin-right: 40px; list-style:none">
+                                            <strong>*טיפים</strong>
+                                            <li>-בכל החדרים מומלץ לבצע מיון ולתרום חפצים שאינם בשימוש אך במצב סביר פלוס.</li>
+                                            <li>-חפצים שאינם במצב טוב יש להעביר למחזור במידת הצורך או לזרוק.   </li>
+                                        </ul>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>22</th>
+                                    <th>23</th>
+                                    <th>24</th>
+                                </tr>
+                                <tr>
+                                    <td>יום זה מוקדש לאריזה של חפצים הניתנים לפירוק עצמאי.</td>
+                                    <td>יום זה מוקדש לחפצים של הרגע האחרון לפני המעבר.</td>
+                                    <th>מעבר דירה!</th>
+                                </tr>
+                            </table>
+
+
+                            <section class="familyP">
+                                <h4>הובלה</h4>
+                                <ul>
+                                    <li>	מומלץ להוציא את הילדים מהבית ביום ההובלה. במידת האפשר מומלץ להעבירם ללינה בבית הסבים או חברים טובים כבר בלילה שלפני ההובלה, או לדאוג לקחת אותם בבוקר, עוד לפני שהמובילים באים.</li>
+                                    <li id="lastLineJumpFamily">	מומלץ ביום המעבר לפרוק קודם כל את חדר הילדים ע"מ שירגישו בנוח ובבית. </li>
+                                </ul>
+                            </section>
+                            <div id="backgroundLine2"></div>
+                        </article>
+                    </div>
+
+                    <section class="genericContent">
+                        <h3>תוכן מורחב על אריזה, הובלה ובירוקרטיה</h3>
+                        <div id="ariza">
+                            <section>
+                                <h4>אריזה עצמאית</h4>
+                                <ul>
+                                    <li>
+                                        <strong>הכינו "תוכן עניינים" </strong>
+                                        המרכז את כל הארגזים לפי מספרים (את המספרים כתבו בתוכן העניינים ועל הארגז עצמו). הוסיפו בתוכן העניינים את שם הארגז שיהיה לכם קל יותר בתהליך הפריקה.
+                                    </li>
+                                    <li>כשאורזים ארגז, מומלץ לכתוב עליו (על כל פאות הארגז) את סוג התכולה שיש בפנים בחלוקה לקטגוריות לפי חדרי הבית.</li>
+                                    <li>
+                                        כתיבת הקטגוריה "מטבח" למשל מספיקה אמנם לכתיבה על הארגז,
+                                        <strong>
+                                            אך בתוכן העניינים ציינו מהי התכולה המפורטת בכל ארגז,
+                                        </strong>
+                                        כדי שתרצו לחפש משהו ספציפי יהיה לכן קל הרבה יותר.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רכזו בצד ציוד הכרחי להתנהלות היום יומית.
+                                        </strong>
+                                        בסופו של דבר תאלצו לארוז הכל, אך ריכוז הפריטים הללו בצד יעזור לכם להתנהל ויש לארוז אותו בהדרגה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            ארזו תכשיטים ודברי ערך יקרים אתכם בתיק אישי.
+                                        </strong>
+                                        לא מומלץ בכלל לארוז אותם בקרטונים גם אם חברת ההובלה נראית לכם אמינה, כדאי להימנע ממצבים כאלה.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>טיפים לאריזת תכולה שבירה</h5>
+                                <ul>
+                                    <li>
+                                        במידה ויש ארגז שביר
+                                        <strong>
+                                            ציינו
+                                        </strong>
+                                        זאת על הארגז.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            עטפו
+                                        </strong>
+                                        כל פריט בנפרד בעיון, ומעל שימו פצפצים.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רפדו
+                                        </strong>
+                                        את כל דפנות הארגז בפצפצים או במגבת/ שמיכה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            אל תשאירו קרטון ריק,
+                                        </strong>
+
+                                        מלאו אותו עד הסוף כדי למנוע תזוזת פריטים בפנים שעלולה להישבר.
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת בגדים</h5>
+                                <ul>
+                                    <li>מומלץ להשתמש בשקיות ואקום להקטנת נפח הבגדים.</li>
+                                    <li>מומלץ לגלגל ביגוד דק ולעטוף בגומייה על מנת לחסוך במקום, ניתן גם לקפל או לשלב בין שתי האופציות. </li>
+                                    <li>במידה ומדובר על פרטי חורף כמו מעילים גדולים, מומלץ לפרוש אותם בתחתית או בחלק העליון של הארגז על מנת שיתפסו פחות מקום. </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת נוזלים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            וודאו
+                                        </strong>
+                                        שכל הבקבוקים סגורים היטב.
+                                    </li>
+                                    <li>מומלץ לעטוף את פיות הבקבוק בנייר דבק ולשים אותם בשקיות נפרדות.</li>
+                                    <li>כדאי לא לערבב את תכולת הנוזלים עם תכולה אחרת כדי למנוע הכתמה של בגדים או לכלוך של פריטים אחרים.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת ארגז ספרים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            השתמשו בארגז קטן ורצוי שיהיה קשיח.
+                                        </strong>
+                                        ארגזים גדולים של ספרים עלולים להיות כבדים מידי לנשיאה ועלולים להיקרע.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            חזקו
+                                        </strong>
+                                        את תחתית הארגז בנייר דבק כדי שלא יפתח.
+                                    </li>
+                                    <li>
+                                        סדרו את הספרים לפי גודל. ניתן להעמיד את הספרים (כמו על מדף) או להשכיבם.
+                                        הניחו את הספרים שדרה לשדרה.
+                                    </li>
+                                    <li>במידה ויש ספר חשוב ניתן לעטוף גם אותו בנייר עיתון.</li>
+                                    <li>מלאו את החללים שנוצרים בכדורי נייר עיתון על מנת לשמור על סידור אריזת הספרים.</li>
+                                </ul>
+
+                            </section>
+                            <section>
+                                <h4>חברות אריזה</h4>
+                                <p id="packingCompanies">
+                                    קיימות חברות שיעזרו לך לארוז את הבית בקלות, ויש כאלה שיעזרו לך גם לפרוק את תכולת הדירה בצורה מסודרת.
+                                    <a href="https://www.d.co.il/h-c4040-e0-p0-l0-t40035798,40035797.na2" target="_blank">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLinePacking"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            </section>
+
+                            <div id="backgroundLine3"></div>
+                        </div>
+
+                        <div id="hovala">
+                            <h4>הובלה עצמאית</h4>
+                            <p>
+                                אם אתם רוצים לחסוך בכסף, אתם יכולים לשכור רכב להובלת תכולת הדירה.
+                                השכרת רכב יכולה להיות אופציה טובה, אך יש לקחת בחשבון את כמות התכולה אותה אתם מעבירים. במידה ויש תכולה רבה אמנם תחסכו כ30-40% ממחיר ההובלה, אך לא לכולם יש את היכולת להעמיס ולפרוק לבד את כל הארגזים- מומלץ לקחת אתכם כמה חברים.
+                            </p>
+                            <h5>קיימות מספר דרכים להובלה עצמית</h5>
+                            <div id="selfMoving">
+                                <ul>
+                                    <li>השכרת רכב עם נהג- שירות שעולה כ250 ₪ לשעת עבודה כל שעה נוספת, תוספת תשלום של 200 ₪. התשלום כולל טווח שבין 5 עד 10 ק"מ, מידה והמעבר הוא בטווח רחוק יותר יש תוספת תשלום.</li>
+                                    <li>השכרת רכב בלי נהג- תשמשו כנהג וכסבל.</li>
+                                    <li>במידה והתכולה היא לא רבה מאוד- הובלה ברכבכם הפרטי או ברכב של חברים/ משפחה.</li>
+                                </ul>
+                            </div>
+                            <h5>האם כדאי לי?</h5>
+                            <p>
+                                יש לקחת בחשבון את כל הפרמטרים, דלק, זמן, מאמץ פיזי, הוצאת כספית על חומרי אריזה ומרחק הנסיעה. בעת מעבר דירה עם תכולה קטנה (למשל לדירה מאובזרת), ובמרחק לא גדול,
+                                יתכן שישתלם יותר להעביר ברכב פרטי או לשכור רכב להובלה. במידה ולא, מומלץ להשתמש בחברת הובלה.
+                                <br /><br />
+
+                                <strong>קיימות חברות להשכרת רכב להובלה עצמית,</strong>
+                                <a href="https://www.d.co.il/SearchResults?location=&tagIds=27990&sortType=3&tagIds=40033419" target="_blank" id="extraInfoMoving">
+                                    למידע נוסף והמלצות
+                                    לחץ כאן.
+                                </a>
+                            </p>
+                            <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+
+
+                            <h4>חברות הובלה</h4>
+                            <section>
+                                <h5>מחירים להובלת דירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>הובלת דירה</th>
+                                        <th id="cost">
+                                            מחיר בש"ח
+                                            <ul>
+                                                <li>המחיר כולל טווח של עד 30 ק"מ</li>
+                                                <li>הובלה בבניינים עם מעלית</li>
+                                                <li>המחיר לא כולל דירות עם נגישות בעייתית</li>
+                                            </ul>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>חדר אחד</td>
+                                        <td>800-1,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 חדרים</td>
+                                        <td>1,200-2,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 חדרים</td>
+                                        <td>1,600-2,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 חדרים</td>
+                                        <td>1,800-3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 חדרים</td>
+                                        <td>2,200-4,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 חדרים</td>
+                                        <td>3,500-5,500</td>
+                                    </tr>
+
+                                </table>
+                            </section>
+
+                            <section>
+                                <h5>המלצה לטיפ למובילים</h5>
+                                <p>הטיפ המקובל הוא בטווח של 50-100 ש"ח לכל אחד מהמובילים</p>
+                            </section>
+                            <section>
+                                <h5>מעבר דירה- מקרים מיוחדים ותוספות להעברת הדירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>קטגוריה</th>
+                                        <th>מחיר בש"ח</th>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בסוף חודש או בתחילתו</td>
+                                        <td>10-20% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בחודשים יולי- אוגוסט</td>
+                                        <td>15-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עם מנוף- מחיר לשעת עבודה</td>
+                                        <td>300-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה לבניין בלי מעלית</td>
+                                        <td>20-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עד 100 ק"מ- תוספת למחיר ההובלה</td>
+                                        <td>1,500-3,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>פירוק והרכבת ארון</td>
+                                        <td>200-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה של פריט בודד(מקרר, מיטה, ספה, מכונת כביה ועוד)</td>
+                                        <td>200-600</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">שירותי אריזה</th>
+                                    </tr>
+                                    <tr>
+                                        <td>מחיר לארגז בודד</td>
+                                        <td>25-50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>אריזת ציוד שביר (מחיר לארגז)</td>
+                                        <td>30-60</td>
+                                    </tr>
+                                </table>
+                                <p><strong>בהתאם לתוכן העניינים שכתבתם, אל תשכחו להנחות את המוביל להניח את הארגזים בחלוקה לחדרים השונים בבית בהתאמה!</strong></p>
+                            </section>
+
+                            <section>
+                                <h4>חברות הובלה הנותנות שירות בכל הארץ</h4>
+                                <p>
+                                    <a href="https://www.d.co.il/h-c35840-e0-p0-l0-t40035693.na1" target="_blank" id="hCompaniesInfo">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+                            </section>
+                            <div id="backgroundLine4"></div>
+                        </div>
+                        <div id="birokratia">
+                            <h4>סידור בירוקרטיה באופן עצמאי</h4>
+                            <section>
+                                <h4>לבד</h4>
+                                <h5>מים</h5>
+                                <h6>קניית דירה</h6>
+                                <ul>
+                                    <li>יש לצרף את פרטי הרוכש יחד עם ההצהרה על מצב מד-המים בשעון המים של הדירה בצירוף צילום 2 תעודות הזהות עם ספח פתוח לרוחב.</li>
+                                    <li>יש לשים לב, שכאשר עוברים לדירה חדשה דרך חשבון המים משלמים גם התקנת שעון מים חדש. *בעת רישום חשבון מים יש להצטייד בספח תעודת הזהות של כל בני הבית.</li>
+                                    <li>כאשר קונים דירה מבעלות קודמת, יש לברר על טופס "החלפת משלם" על חשבון המים (לדוגמא עיריית מודיעין).</li>
+                                    <li>מומלץ לברר כי לבעל הדירה הקודמת אין חובות בעירייה לגבי תשלום המים.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>על השוכר לחתום יחד עם בעל הדירה על הצהרה בדבר קריאת מונה וכן הצהרה שכעת הוא הצרכן הנוכחי.</p>
+                                <p>
+                                    הטופס הנוכחי זהה לשכירת וקניית דירה
+                                    <br /> *יש לשים לב כי הטופס משתנה בין עירייה לעירייה.<br />
+
+                                    <a href="forms/טופס העברת משלם חשבון מים.pdf" target="_blank"><img src="images/html/waterForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת משלם חשבון מים" /></a>
+                                </p>
+                                <p id="bigPicWater">*לחץ על התמונה למעבר לטופס</p>
+
+
+                            </section>
+                            <section>
+                                <h5>גז</h5>
+                                <p>יש לשים לב אם מדובר במעבר לבית פרטי או בניין משותף. בעת בניין משותף מתקיים כל מה שכתוב במים, אם הבית הוא פרטי יש להתייחס לבלוני הגז- במידה וריקים לרכוש חדשים</p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/טופס העברת בעלות גז.pdf" target="_blank" id="gasFormIngo"><img src="images/html/gasForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת בעלות גז" /></a>
+                                <p id="gazPic">*לחץ על התמונה למעבר לטופס</p>
+                            </section>
+
+                            <h5>חשמל</h5>
+                            <section>
+                                <h6>קניית דירה</h6>
+                                <p>כדי להעביר חשבון חשמל הדייר החדש ירשום את מצב המונה, יתקשר למרכז השרות 103, וימסור את הנתונים הבאים: מספר החוזה (שמופיע בחלקו העליון של חשבון החשמל), מצב המונה ופרטים אישיים של הלקוח (שם, מספר תעודת זהות, וטלפון). החשבון הבא ישלח על שמו. </p>
+                                <p>
+                                    טופס רישום לקוח חדש- חברת החשמל
+                                    <br />
+                                    <a href="forms/רישום לקוח חדש- חשמל.pdf" target="_blank"><img src="images/html/electricityNewForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="רישום לקוח חדש - חברת החשמל" /></a>
+                                </p>
+                                <p id="hashmalPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>כפי שכתוב בקניית דירה. בנוסף, יש לוודא כי השוכר חותם על הצהרה בדבר קריאת מונה לפני התשלום והחלפת המונה אצל העירייה. </p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/החלפת שם לקוח חשמל.pdf" target="_blank" id="newHashForm"><img src="images/html/electricityForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="החלפת שם לקוח- חברת החשמל" /></a>
+                                <p id="newHashPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h5>עדכוני כתובת והעברת שירותי ספק</h5>
+                                <p>כאשר עוברים דירה יש לגשת לרשות מרשם האוכלוסין ולעדכן את הכתובת החדשה בצירוף תעודת הזהות של כל דיירי הבית.</p>
+                                <p>הטופס-</p>
+                                <a href="forms/טופס שינוי מען.pdf" target="_blank" id="maanForm"><img src="images/html/adressForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="טופס שינוי מען" /></a>
+                                <p id="maanPic">*לחץ על התמונה למעבר לטופס</p>
+
+                                <ul>
+                                    <li>כשבועיים לפני המעבר יש ליצור קשר עם חברות הכבלים והטלפון להעברת הכבלים והעתקת קו הטלפון שלכם לדירה החדשה. עלות התקנת/העברת קו תעשה בחינם או במחיר עשרות שקלים בודדים (בהתאם לחוקי החברה).</li>
+                                    <li>מומלץ להשתמש בשירות "דואר עוקב" של דואר ישראל בכדי להבטיח שכל הדואר יגיע למקום מגוריכם החדש בלבד.</li>
+                                    <li>כל עוד נשארים באותה תשתית אינטרנט אין מחויבות להודיע לספק האינטרנט על המעבר  אך מומלץ מאד (במקרה שהוא אינו אותו ספק של הכבלים והטלפון).</li>
+                                    <li>ישנה אפשרות לבצע העברת כתובת ללא עלות בצורה מקוונת באתר משרד הפנים, <a href="https://www.gov.il/he/service/changing_address" id="govLink" aria-label="לחץ למעבר לאתר" target="_blank">לחץ כאן לכניסה לאתר.</a> </li>
+                                </ul>
+                            </section>
+
+
+                            <h4>סידור בירוקרטיה בעזרת חברה</h4>
+                            <table>
+                                <tr>
+                                    <th>שם החברה</th>
+                                    <th>טלפון</th>
+                                    <th>שעות פעילות</th>
+                                </tr>
+                                <tr>
+                                    <th>avarty</th>
+                                    <td>מייל- team@avarty.co.il</td>
+                                    <td>ימים א'-ה' בין השעות 8:00-16:00</td>
+                                </tr>
+                                <tr>
+                                    <th>over bait</th>
+                                    <td>053-278-1178</td>
+                                    <td>שירות "עובר בית" מתבצע באופן מקוון ועל כן ניתן להירשם לשרות בכל נקודת זמן ומכל מקום</td>
+                                </tr>
+                                <tr>
+                                    <th>דואר ישראל</th>
+                                    <td>171 מכל טלפון</td>
+                                    <td>בהתאם לשעות הפתיחה של סניף הדואר הקרוב לביתכם.</td>
+                                </tr>
+
+
+                            </table>
+                            <div id="bottomLineBiroc"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            <footer>
+                                © כל הזכויות שמורות ליוצרי
+                                ez2move
+                            </footer>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+
+            <!--סטודנט-->
+            <article id="student5" class="dragend-page">
+                <header id="studentHead" class="firstFrames">
+                    <div id="scrollUpPointSt" class="scrollUpPointDes"></div>
+                    <div id="coupleDivAbsolute">
+                        <img src="images/html/bigStudentIcon.png" alt="סטודנט" width="450" class="bigCoupleIcon" />
+                        <h2 id="bigStudentText">סטודנט</h2>
+                        <a href="#readMoreButton3" id="readMoreButton3" alt="קרא עוד">קרא עוד</a>
+
+                    </div>
+
+                </header>
+                <div class="content">
+                    <div id="backgroundLine7"></div>
+                    <div id="studentContent">
+                        <div id="goUpStudent" class="goUpDes" onclick="scrollUpSt()" alt="קפוץ לראש העמוד" aria-label="לחצן הקפץ לראש העמוד"></div>
+                        <article>
+                            <section id="contentStart">
+                                <h3>  התאמנו עבורכם טיפים שיהפכו את המעבר לקל יותר ומהיר יותר. </h3>
+                                <a href="#backgroundLine7" id="contentButton">לצפייה בתוכן זה, לחץ כאן</a>
+                                <a href="#jumpToStGeneric" id="genericButton">לצפייה בתוכן מורחב, לחץ כאן</a>
+                            </section><div id="boxPic"></div>
+                            <section id="firstP">
+                                <h4>טיפים בהובלה</h4>
+                                <ul id="ulStudent">
+                                    <li>
+                                        <strong>גמישות בתאריך ההובלה יכולה להוזיל בעלות- </strong>
+                                        מובילים מסוימים יתמחרו לכם הובלה נלווית בעלות נמוכה יותר, מפני שהם ממילא נמצאים באזור.
+                                    </li>
+                                    <li>
+                                        <strong>תאריכי הובלה-</strong>
+                                        ישנם תאריכים חמים במיוחד כמו תחילת חודש, סוף חודש ואמצע חודש, וכדאי שלא תתכננו הובלה בדיוק בימים אלו. בתאריכים אחרים, מובילים יכולים להתפשר ולהוריד במחיר.
+                                    </li>
+                                    <li>	לעתים כדאי להוביל לבד את התכולה ובנפרד את הפריטים הגדולים והכבדים- על מנת לחסוך בעלויות. </li>
+                                    <li>
+                                        נסו למצוא
+                                        <strong>מוביל שחוזר ריק מהובלה אחרת-</strong>
+                                        נסו לתפוס איתם "טרמפ" לאחר שתבקשו להיות הובלה שנייה ושזה יוזיל עלויות.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h4>הנחות בארנונה</h4>
+                                <ul>
+                                    <li>
+                                        <strong>מי זכאי? </strong>
+                                        סטודנט, כולל תלמיד מכינה, שאינו עובד.
+                                        סטודנט, כולל תלמיד מכינה, עובד, בהתאם לגובה הכנסתו החודשית (ברוטו) הממוצעת בשנת הכספים 2015:
+                                        עד 2,703 ש"ח - ההנחה עד גובה 80%.
+                                        בין 2,704 ש"ח ל- 3,108 ש"ח - ההנחה עד גובה 60%.
+                                        בין 3,109 ש"ח ל- 3,513 ש"ח - ההנחה עד גובה 40%.
+                                    </li>
+                                    <li>
+                                        <strong>תהליך מימוש הזכות- </strong>
+                                        בחודשים ינואר עד פברואר יש לפנות, באופן עצמאי או באמצעות אגודת הסטודנטים (במוסדות שבהם האגודה מציעה שירות כזה), לאגף לגביית ארנונה ברשות המקומית שבתחומה מתגורר הסטודנט, ולמלא טופס לבקשת הנחה בארנונה.
+                                    </li>
+                                    <li>
+                                        לטופס בקשת ההנחה יש לצרף את
+                                        <strong> המסמכים</strong>
+                                        הבאים
+                                        (עשוי להשתנות בין הרשויות המקומיות ויש לוודא בהתאם לטופס בקשת ההנחה):
+                                        <ul>
+                                            <li>	אישור לימודים חתום לסמסטר הרלוונטי.</li>
+                                            <li>	מערכת שעות לסמסטר הרלוונטי.</li>
+                                            <li>	צילום חוזה שכירות (חתום על ידי כל הצדדים לחוזה).</li>
+                                            <li>	צילום תעודת זהות.</li>
+                                            <li>	סטודנט הגר עם שותפים (כולל בן/ת זוג) נדרש להציג הוכחות על הכנסות השותפים בחודשים אוקטובר עד דצמבר של השנה החולפת. במקרה שבו יש מספר שותפים, ההנחה שתינתן תחשב באופן יחסי (בהתאם לאחוז ההחזקה בנכס).</li>
+                                            <li>	שומה ממס הכנסה, במידה והסטודנט עבד כעצמאי באותם חודשים.</li>
+                                            <li>	תלושי משכורת של החודשים אוקטובר עד דצמבר של השנה החולפת, במקרה שהסטודנט עבד כשכיר באותם חודשים.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        סטודנט שלא עבד כלל יצרף גם את
+                                        <strong>האישורים</strong>
+                                        הבאים:
+                                        <ul>
+                                            <li>	תצהיר חתום כדין על הכנסותיו (למשל: תצהיר חתום על ידי עו"ד, רשם בית משפט).</li>
+                                            <li>	טופס מעמד לא עובד ודו"ח מעסיקים מהמוסד לביטוח לאומי.</li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <strong>חשוב לדעת</strong>
+                                        <ul>
+                                            <li>	הנחה מוענקת במקרים שבהם חשבון הארנונה הוא על שם הסטודנט.</li>
+                                            <li>	יש לברר את עצם הזכאות להנחה ואת גובה ההנחה ותנאיה מול הרשות המקומית.</li>
+                                            <li>	הנחה רטרואקטיבית עשויה להינתן בחלק מהרשויות המקומיות, בהתאם לכללים שנקבעו בכל רשות.</li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </section>
+                            <div id="jumpToStGeneric"></div>
+                            <div id="backgroundLine2"></div>
+                        </article>
+                    </div>
+                    <section class="genericContent">
+                        <h3>תוכן מורחב על אריזה, הובלה ובירוקרטיה</h3>
+                        <div id="ariza">
+                            <section>
+                                <h4>אריזה עצמאית</h4>
+                                <ul>
+                                    <li>
+                                        <strong>הכינו "תוכן עניינים" </strong>
+                                        המרכז את כל הארגזים לפי מספרים (את המספרים כתבו בתוכן העניינים ועל הארגז עצמו). הוסיפו בתוכן העניינים את שם הארגז שיהיה לכם קל יותר בתהליך הפריקה.
+                                    </li>
+                                    <li>כשאורזים ארגז, מומלץ לכתוב עליו (על כל פאות הארגז) את סוג התכולה שיש בפנים בחלוקה לקטגוריות לפי חדרי הבית.</li>
+                                    <li>
+                                        כתיבת הקטגוריה "מטבח" למשל מספיקה אמנם לכתיבה על הארגז,
+                                        <strong>
+                                            אך בתוכן העניינים ציינו מהי התכולה המפורטת בכל ארגז,
+                                        </strong>
+                                        כדי שתרצו לחפש משהו ספציפי יהיה לכן קל הרבה יותר.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רכזו בצד ציוד הכרחי להתנהלות היום יומית.
+                                        </strong>
+                                        בסופו של דבר תאלצו לארוז הכל, אך ריכוז הפריטים הללו בצד יעזור לכם להתנהל ויש לארוז אותו בהדרגה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            ארזו תכשיטים ודברי ערך יקרים אתכם בתיק אישי.
+                                        </strong>
+                                        לא מומלץ בכלל לארוז אותם בקרטונים גם אם חברת ההובלה נראית לכם אמינה, כדאי להימנע ממצבים כאלה.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>טיפים לאריזת תכולה שבירה</h5>
+                                <ul>
+                                    <li>
+                                        במידה ויש ארגז שביר
+                                        <strong>
+                                            ציינו
+                                        </strong>
+                                        זאת על הארגז.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            עטפו
+                                        </strong>
+                                        כל פריט בנפרד בעיון, ומעל שימו פצפצים.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רפדו
+                                        </strong>
+                                        את כל דפנות הארגז בפצפצים או במגבת/ שמיכה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            אל תשאירו קרטון ריק,
+                                        </strong>
+
+                                        מלאו אותו עד הסוף כדי למנוע תזוזת פריטים בפנים שעלולה להישבר.
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת בגדים</h5>
+                                <ul>
+                                    <li>מומלץ להשתמש בשקיות ואקום להקטנת נפח הבגדים.</li>
+                                    <li>מומלץ לגלגל ביגוד דק ולעטוף בגומייה על מנת לחסוך במקום, ניתן גם לקפל או לשלב בין שתי האופציות. </li>
+                                    <li>במידה ומדובר על פרטי חורף כמו מעילים גדולים, מומלץ לפרוש אותם בתחתית או בחלק העליון של הארגז על מנת שיתפסו פחות מקום. </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת נוזלים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            וודאו
+                                        </strong>
+                                        שכל הבקבוקים סגורים היטב.
+                                    </li>
+                                    <li>מומלץ לעטוף את פיות הבקבוק בנייר דבק ולשים אותם בשקיות נפרדות.</li>
+                                    <li>כדאי לא לערבב את תכולת הנוזלים עם תכולה אחרת כדי למנוע הכתמה של בגדים או לכלוך של פריטים אחרים.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת ארגז ספרים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            השתמשו בארגז קטן ורצוי שיהיה קשיח.
+                                        </strong>
+                                        ארגזים גדולים של ספרים עלולים להיות כבדים מידי לנשיאה ועלולים להיקרע.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            חזקו
+                                        </strong>
+                                        את תחתית הארגז בנייר דבק כדי שלא יפתח.
+                                    </li>
+                                    <li>
+                                        סדרו את הספרים לפי גודל. ניתן להעמיד את הספרים (כמו על מדף) או להשכיבם.
+                                        הניחו את הספרים שדרה לשדרה.
+                                    </li>
+                                    <li>במידה ויש ספר חשוב ניתן לעטוף גם אותו בנייר עיתון.</li>
+                                    <li>מלאו את החללים שנוצרים בכדורי נייר עיתון על מנת לשמור על סידור אריזת הספרים.</li>
+                                </ul>
+
+                            </section>
+                            <section>
+                                <h4>חברות אריזה</h4>
+                                <p id="packingCompanies">
+                                    קיימות חברות שיעזרו לך לארוז את הבית בקלות, ויש כאלה שיעזרו לך גם לפרוק את תכולת הדירה בצורה מסודרת.
+                                    <a href="https://www.d.co.il/h-c4040-e0-p0-l0-t40035798,40035797.na2" target="_blank">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLinePacking"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            </section>
+
+                            <div id="backgroundLine3"></div>
+                        </div>
+
+                        <div id="hovala">
+                            <h4>הובלה עצמאית</h4>
+                            <p>
+                                אם אתם רוצים לחסוך בכסף, אתם יכולים לשכור רכב להובלת תכולת הדירה.
+                                השכרת רכב יכולה להיות אופציה טובה, אך יש לקחת בחשבון את כמות התכולה אותה אתם מעבירים. במידה ויש תכולה רבה אמנם תחסכו כ30-40% ממחיר ההובלה, אך לא לכולם יש את היכולת להעמיס ולפרוק לבד את כל הארגזים- מומלץ לקחת אתכם כמה חברים.
+                            </p>
+                            <h5>קיימות מספר דרכים להובלה עצמית</h5>
+                            <div id="selfMoving">
+                                <ul>
+                                    <li>השכרת רכב עם נהג- שירות שעולה כ250 ₪ לשעת עבודה כל שעה נוספת, תוספת תשלום של 200 ₪. התשלום כולל טווח שבין 5 עד 10 ק"מ, מידה והמעבר הוא בטווח רחוק יותר יש תוספת תשלום.</li>
+                                    <li>השכרת רכב בלי נהג- תשמשו כנהג וכסבל.</li>
+                                    <li>במידה והתכולה היא לא רבה מאוד- הובלה ברכבכם הפרטי או ברכב של חברים/ משפחה.</li>
+                                </ul>
+                            </div>
+                            <h5>האם כדאי לי?</h5>
+                            <p>
+                                יש לקחת בחשבון את כל הפרמטרים, דלק, זמן, מאמץ פיזי, הוצאת כספית על חומרי אריזה ומרחק הנסיעה. בעת מעבר דירה עם תכולה קטנה (למשל לדירה מאובזרת), ובמרחק לא גדול,
+                                יתכן שישתלם יותר להעביר ברכב פרטי או לשכור רכב להובלה. במידה ולא, מומלץ להשתמש בחברת הובלה.
+                                <br /><br />
+
+                                <strong>קיימות חברות להשכרת רכב להובלה עצמית,</strong>
+                                <a href="https://www.d.co.il/SearchResults?location=&tagIds=27990&sortType=3&tagIds=40033419" target="_blank" id="extraInfoMoving">
+                                    למידע נוסף והמלצות
+                                    לחץ כאן.
+                                </a>
+                            </p>
+                            <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+
+
+                            <h4>חברות הובלה</h4>
+                            <section>
+                                <h5>מחירים להובלת דירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>הובלת דירה</th>
+                                        <th id="cost">
+                                            מחיר בש"ח
+                                            <ul>
+                                                <li>המחיר כולל טווח של עד 30 ק"מ</li>
+                                                <li>הובלה בבניינים עם מעלית</li>
+                                                <li>המחיר לא כולל דירות עם נגישות בעייתית</li>
+                                            </ul>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>חדר אחד</td>
+                                        <td>800-1,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 חדרים</td>
+                                        <td>1,200-2,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 חדרים</td>
+                                        <td>1,600-2,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 חדרים</td>
+                                        <td>1,800-3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 חדרים</td>
+                                        <td>2,200-4,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 חדרים</td>
+                                        <td>3,500-5,500</td>
+                                    </tr>
+
+                                </table>
+                            </section>
+
+                            <section>
+                                <h5>המלצה לטיפ למובילים</h5>
+                                <p>הטיפ המקובל הוא בטווח של 50-100 ש"ח לכל אחד מהמובילים</p>
+                            </section>
+                            <section>
+                                <h5>מעבר דירה- מקרים מיוחדים ותוספות להעברת הדירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>קטגוריה</th>
+                                        <th>מחיר בש"ח</th>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בסוף חודש או בתחילתו</td>
+                                        <td>10-20% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בחודשים יולי- אוגוסט</td>
+                                        <td>15-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עם מנוף- מחיר לשעת עבודה</td>
+                                        <td>300-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה לבניין בלי מעלית</td>
+                                        <td>20-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עד 100 ק"מ- תוספת למחיר ההובלה</td>
+                                        <td>1,500-3,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>פירוק והרכבת ארון</td>
+                                        <td>200-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה של פריט בודד(מקרר, מיטה, ספה, מכונת כביה ועוד)</td>
+                                        <td>200-600</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">שירותי אריזה</th>
+                                    </tr>
+                                    <tr>
+                                        <td>מחיר לארגז בודד</td>
+                                        <td>25-50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>אריזת ציוד שביר (מחיר לארגז)</td>
+                                        <td>30-60</td>
+                                    </tr>
+                                </table>
+                                <p><strong>בהתאם לתוכן העניינים שכתבתם, אל תשכחו להנחות את המוביל להניח את הארגזים בחלוקה לחדרים השונים בבית בהתאמה!</strong></p>
+                            </section>
+
+                            <section>
+                                <h4>חברות הובלה הנותנות שירות בכל הארץ</h4>
+                                <p>
+                                    <a href="https://www.d.co.il/h-c35840-e0-p0-l0-t40035693.na1" target="_blank" id="hCompaniesInfo">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+                            </section>
+                            <div id="backgroundLine4"></div>
+                        </div>
+                        <div id="birokratia">
+                            <h4>סידור בירוקרטיה באופן עצמאי</h4>
+                            <section>
+                                <h4>לבד</h4>
+                                <h5>מים</h5>
+                                <h6>קניית דירה</h6>
+                                <ul>
+                                    <li>יש לצרף את פרטי הרוכש יחד עם ההצהרה על מצב מד-המים בשעון המים של הדירה בצירוף צילום 2 תעודות הזהות עם ספח פתוח לרוחב.</li>
+                                    <li>יש לשים לב, שכאשר עוברים לדירה חדשה דרך חשבון המים משלמים גם התקנת שעון מים חדש. *בעת רישום חשבון מים יש להצטייד בספח תעודת הזהות של כל בני הבית.</li>
+                                    <li>כאשר קונים דירה מבעלות קודמת, יש לברר על טופס "החלפת משלם" על חשבון המים (לדוגמא עיריית מודיעין).</li>
+                                    <li>מומלץ לברר כי לבעל הדירה הקודמת אין חובות בעירייה לגבי תשלום המים.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>על השוכר לחתום יחד עם בעל הדירה על הצהרה בדבר קריאת מונה וכן הצהרה שכעת הוא הצרכן הנוכחי.</p>
+                                <p>
+                                    הטופס הנוכחי זהה לשכירת וקניית דירה
+                                    <br /> *יש לשים לב כי הטופס משתנה בין עירייה לעירייה.<br />
+
+                                    <a href="forms/טופס העברת משלם חשבון מים.pdf" target="_blank"><img src="images/html/waterForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת משלם חשבון מים" /></a>
+                                </p>
+                                <p id="bigPicWater">*לחץ על התמונה למעבר לטופס</p>
+
+
+                            </section>
+                            <section>
+                                <h5>גז</h5>
+                                <p>יש לשים לב אם מדובר במעבר לבית פרטי או בניין משותף. בעת בניין משותף מתקיים כל מה שכתוב במים, אם הבית הוא פרטי יש להתייחס לבלוני הגז- במידה וריקים לרכוש חדשים</p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/טופס העברת בעלות גז.pdf" target="_blank" id="gasFormIngo"><img src="images/html/gasForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת בעלות גז" /></a>
+                                <p id="gazPic">*לחץ על התמונה למעבר לטופס</p>
+                            </section>
+
+                            <h5>חשמל</h5>
+                            <section>
+                                <h6>קניית דירה</h6>
+                                <p>כדי להעביר חשבון חשמל הדייר החדש ירשום את מצב המונה, יתקשר למרכז השרות 103, וימסור את הנתונים הבאים: מספר החוזה (שמופיע בחלקו העליון של חשבון החשמל), מצב המונה ופרטים אישיים של הלקוח (שם, מספר תעודת זהות, וטלפון). החשבון הבא ישלח על שמו. </p>
+                                <p>
+                                    טופס רישום לקוח חדש- חברת החשמל
+                                    <br />
+                                    <a href="forms/רישום לקוח חדש- חשמל.pdf" target="_blank"><img src="images/html/electricityNewForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="רישום לקוח חדש - חברת החשמל" /></a>
+                                </p>
+                                <p id="hashmalPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>כפי שכתוב בקניית דירה. בנוסף, יש לוודא כי השוכר חותם על הצהרה בדבר קריאת מונה לפני התשלום והחלפת המונה אצל העירייה. </p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/החלפת שם לקוח חשמל.pdf" target="_blank" id="newHashForm"><img src="images/html/electricityForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="החלפת שם לקוח- חברת החשמל" /></a>
+                                <p id="newHashPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h5>עדכוני כתובת והעברת שירותי ספק</h5>
+                                <p>כאשר עוברים דירה יש לגשת לרשות מרשם האוכלוסין ולעדכן את הכתובת החדשה בצירוף תעודת הזהות של כל דיירי הבית.</p>
+                                <p>הטופס-</p>
+                                <a href="forms/טופס שינוי מען.pdf" target="_blank" id="maanForm"><img src="images/html/adressForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="טופס שינוי מען" /></a>
+                                <p id="maanPic">*לחץ על התמונה למעבר לטופס</p>
+
+                                <ul>
+                                    <li>כשבועיים לפני המעבר יש ליצור קשר עם חברות הכבלים והטלפון להעברת הכבלים והעתקת קו הטלפון שלכם לדירה החדשה. עלות התקנת/העברת קו תעשה בחינם או במחיר עשרות שקלים בודדים (בהתאם לחוקי החברה).</li>
+                                    <li>מומלץ להשתמש בשירות "דואר עוקב" של דואר ישראל בכדי להבטיח שכל הדואר יגיע למקום מגוריכם החדש בלבד.</li>
+                                    <li>כל עוד נשארים באותה תשתית אינטרנט אין מחויבות להודיע לספק האינטרנט על המעבר  אך מומלץ מאד (במקרה שהוא אינו אותו ספק של הכבלים והטלפון).</li>
+                                    <li>ישנה אפשרות לבצע העברת כתובת ללא עלות בצורה מקוונת באתר משרד הפנים, <a href="https://www.gov.il/he/service/changing_address" id="govLink" aria-label="לחץ למעבר לאתר" target="_blank">לחץ כאן לכניסה לאתר.</a> </li>
+                                </ul>
+                            </section>
+
+
+                            <h4>סידור בירוקרטיה בעזרת חברה</h4>
+                            <table>
+                                <tr>
+                                    <th>שם החברה</th>
+                                    <th>טלפון</th>
+                                    <th>שעות פעילות</th>
+                                </tr>
+                                <tr>
+                                    <th>avarty</th>
+                                    <td>מייל- team@avarty.co.il</td>
+                                    <td>ימים א'-ה' בין השעות 8:00-16:00</td>
+                                </tr>
+                                <tr>
+                                    <th>over bait</th>
+                                    <td>053-278-1178</td>
+                                    <td>שירות "עובר בית" מתבצע באופן מקוון ועל כן ניתן להירשם לשרות בכל נקודת זמן ומכל מקום</td>
+                                </tr>
+                                <tr>
+                                    <th>דואר ישראל</th>
+                                    <td>171 מכל טלפון</td>
+                                    <td>בהתאם לשעות הפתיחה של סניף הדואר הקרוב לביתכם.</td>
+                                </tr>
+
+
+                            </table>
+                            <div id="bottomLineBiroc"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            <footer>
+                                © כל הזכויות שמורות ליוצרי
+                                ez2move
+                            </footer>
+                        </div>
+                    </section>
+                </div>
+
+            </article>
+
+            <!--יחיד-->
+            <article id="single6" class="dragend-page">
+                <header id="singleHead" class="firstFrames">
+                    <div id="scrollUpPointSi" class="scrollUpPointDes"></div>
+                    <div id="coupleDivAbsolute">
+
+                        <img src="images/html/bigSingleIcon.png" alt="יחיד" width="450" class="bigCoupleIcon" />
+                        <h2 id="bigSingleText">יחיד</h2>
+                        <a href="#readMoreButton4" id="readMoreButton4" onclick="show_hide_single(this)" alt="קרא עוד">קרא עוד</a>
+                    </div>
+
+                </header>
+                <div class="content">
+                    <div id="backgroundLine9"></div>
+                    <div id="singleContent">
+                        <div id="goUpSingle" class="goUpDes" onclick="scrollUpSi()" alt="קפוץ לראש העמוד" aria-label="לחצן הקפץ לראש העמוד"></div>
+                        <article>
+                            <section id="contentStart">
+                                <h3>  התאמנו עבורכם טיפים שיהפכו את המעבר לקל יותר ומהיר יותר. </h3>
+                                <a href="#backgroundLine9" id="contentButton">לצפייה בתוכן זה, לחץ כאן</a>
+                                <a href="#singleJumpTo" id="genericButton">לצפייה בתוכן מורחב, לחץ כאן</a>
+
+                            </section><div id="boxPic"></div>
+
+                            <p>כאדם יחיד מומלץ להתחיל את תהליך המעבר כחודש מראש בכדי לבצע אותו בצורה נוחה. </p>
+                            <table>
+                                <tr>
+                                    <th colspan="7">שבוע 1</th>
+                                </tr>
+                                <tr>
+                                    <th>1</th>
+                                    <th>2</th>
+                                    <th>3</th>
+                                    <th>4</th>
+                                    <th>5</th>
+                                    <th>6</th>
+                                    <th>7</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">בשבוע זה מתחילה אריזת החפצים שאינם בשימוש יום-יומי (כגון: חפצי נוי, בגדים לא בעונה ועוד.)</td>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">שבוע 2</th>
+
+                                </tr>
+                                <tr>
+                                    <th>8</th>
+                                    <th>9</th>
+                                    <th>10</th>
+                                    <th>11</th>
+                                    <th>12</th>
+                                    <th>13</th>
+                                    <th>14</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">המשך אריזת חפצים אשר אינם בשימוש. בנוסף, בשבוע הזה מומלץ להודיע לחברות הכבלים, הטלפון והאינטרנט (במידת הצורך) על המעבר. </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">שבוע 3</th>
+                                </tr>
+                                <tr>
+                                    <th>15</th>
+                                    <th>16</th>
+                                    <th>17</th>
+                                    <th>18</th>
+                                    <th>19</th>
+                                    <th>20</th>
+                                    <th>21</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">המשך אריזת חפצים אשר אינם בשימוש. מומלץ בשלב זה להתחיל לברר על חברות הובלה במידת הצורך (כתלות בכמות הרהיטים והארגזים). </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">שבוע 4</th>
+                                </tr>
+                                <tr>
+                                    <th>22</th>
+                                    <th>23</th>
+                                    <th>24</th>
+                                    <th>25</th>
+                                    <th>26</th>
+                                    <th>27</th>
+                                    <th>28</th>
+                                </tr>
+                                <tr>
+                                    <td colspan="7">שבוע זה מוקדש לאריזה של הדברים האחרונים. </td>
+                                </tr>
+                                <tr>
+                                    <th colspan="7">שבוע 5</th>
+                                </tr>
+
+                                <tr>
+                                    <th id="singleJumpTo" colspan="7">מעבר דירה! </th>
+                                </tr>
+                            </table>
+                            <div id="backgroundLine2"></div>
+                        </article>
+                    </div>
+                    <section class="genericContent">
+                        <h3>תוכן מורחב על אריזה, הובלה ובירוקרטיה</h3>
+                        <div id="ariza">
+                            <section>
+                                <h4>אריזה עצמאית</h4>
+                                <ul>
+                                    <li>
+                                        <strong>הכינו "תוכן עניינים" </strong>
+                                        המרכז את כל הארגזים לפי מספרים (את המספרים כתבו בתוכן העניינים ועל הארגז עצמו). הוסיפו בתוכן העניינים את שם הארגז שיהיה לכם קל יותר בתהליך הפריקה.
+                                    </li>
+                                    <li>כשאורזים ארגז, מומלץ לכתוב עליו (על כל פאות הארגז) את סוג התכולה שיש בפנים בחלוקה לקטגוריות לפי חדרי הבית.</li>
+                                    <li>
+                                        כתיבת הקטגוריה "מטבח" למשל מספיקה אמנם לכתיבה על הארגז,
+                                        <strong>
+                                            אך בתוכן העניינים ציינו מהי התכולה המפורטת בכל ארגז,
+                                        </strong>
+                                        כדי שתרצו לחפש משהו ספציפי יהיה לכן קל הרבה יותר.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רכזו בצד ציוד הכרחי להתנהלות היום יומית.
+                                        </strong>
+                                        בסופו של דבר תאלצו לארוז הכל, אך ריכוז הפריטים הללו בצד יעזור לכם להתנהל ויש לארוז אותו בהדרגה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            ארזו תכשיטים ודברי ערך יקרים אתכם בתיק אישי.
+                                        </strong>
+                                        לא מומלץ בכלל לארוז אותם בקרטונים גם אם חברת ההובלה נראית לכם אמינה, כדאי להימנע ממצבים כאלה.
+                                    </li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h5>טיפים לאריזת תכולה שבירה</h5>
+                                <ul>
+                                    <li>
+                                        במידה ויש ארגז שביר
+                                        <strong>
+                                            ציינו
+                                        </strong>
+                                        זאת על הארגז.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            עטפו
+                                        </strong>
+                                        כל פריט בנפרד בעיון, ומעל שימו פצפצים.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            רפדו
+                                        </strong>
+                                        את כל דפנות הארגז בפצפצים או במגבת/ שמיכה.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            אל תשאירו קרטון ריק,
+                                        </strong>
+
+                                        מלאו אותו עד הסוף כדי למנוע תזוזת פריטים בפנים שעלולה להישבר.
+                                    </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת בגדים</h5>
+                                <ul>
+                                    <li>מומלץ להשתמש בשקיות ואקום להקטנת נפח הבגדים.</li>
+                                    <li>מומלץ לגלגל ביגוד דק ולעטוף בגומייה על מנת לחסוך במקום, ניתן גם לקפל או לשלב בין שתי האופציות. </li>
+                                    <li>במידה ומדובר על פרטי חורף כמו מעילים גדולים, מומלץ לפרוש אותם בתחתית או בחלק העליון של הארגז על מנת שיתפסו פחות מקום. </li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת נוזלים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            וודאו
+                                        </strong>
+                                        שכל הבקבוקים סגורים היטב.
+                                    </li>
+                                    <li>מומלץ לעטוף את פיות הבקבוק בנייר דבק ולשים אותם בשקיות נפרדות.</li>
+                                    <li>כדאי לא לערבב את תכולת הנוזלים עם תכולה אחרת כדי למנוע הכתמה של בגדים או לכלוך של פריטים אחרים.</li>
+                                </ul>
+                            </section>
+
+                            <section>
+                                <h5>טיפים לאריזת ארגז ספרים</h5>
+                                <ul>
+                                    <li>
+                                        <strong>
+                                            השתמשו בארגז קטן ורצוי שיהיה קשיח.
+                                        </strong>
+                                        ארגזים גדולים של ספרים עלולים להיות כבדים מידי לנשיאה ועלולים להיקרע.
+                                    </li>
+                                    <li>
+                                        <strong>
+                                            חזקו
+                                        </strong>
+                                        את תחתית הארגז בנייר דבק כדי שלא יפתח.
+                                    </li>
+                                    <li>
+                                        סדרו את הספרים לפי גודל. ניתן להעמיד את הספרים (כמו על מדף) או להשכיבם.
+                                        הניחו את הספרים שדרה לשדרה.
+                                    </li>
+                                    <li>במידה ויש ספר חשוב ניתן לעטוף גם אותו בנייר עיתון.</li>
+                                    <li>מלאו את החללים שנוצרים בכדורי נייר עיתון על מנת לשמור על סידור אריזת הספרים.</li>
+                                </ul>
+
+                            </section>
+                            <section>
+                                <h4>חברות אריזה</h4>
+                                <p id="packingCompanies">
+                                    קיימות חברות שיעזרו לך לארוז את הבית בקלות, ויש כאלה שיעזרו לך גם לפרוק את תכולת הדירה בצורה מסודרת.
+                                    <a href="https://www.d.co.il/h-c4040-e0-p0-l0-t40035798,40035797.na2" target="_blank">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLinePacking"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            </section>
+
+                            <div id="backgroundLine3"></div>
+                        </div>
+
+                        <div id="hovala">
+                            <h4>הובלה עצמאית</h4>
+                            <p>
+                                אם אתם רוצים לחסוך בכסף, אתם יכולים לשכור רכב להובלת תכולת הדירה.
+                                השכרת רכב יכולה להיות אופציה טובה, אך יש לקחת בחשבון את כמות התכולה אותה אתם מעבירים. במידה ויש תכולה רבה אמנם תחסכו כ30-40% ממחיר ההובלה, אך לא לכולם יש את היכולת להעמיס ולפרוק לבד את כל הארגזים- מומלץ לקחת אתכם כמה חברים.
+                            </p>
+                            <h5>קיימות מספר דרכים להובלה עצמית</h5>
+                            <div id="selfMoving">
+                                <ul>
+                                    <li>השכרת רכב עם נהג- שירות שעולה כ250 ₪ לשעת עבודה כל שעה נוספת, תוספת תשלום של 200 ₪. התשלום כולל טווח שבין 5 עד 10 ק"מ, מידה והמעבר הוא בטווח רחוק יותר יש תוספת תשלום.</li>
+                                    <li>השכרת רכב בלי נהג- תשמשו כנהג וכסבל.</li>
+                                    <li>במידה והתכולה היא לא רבה מאוד- הובלה ברכבכם הפרטי או ברכב של חברים/ משפחה.</li>
+                                </ul>
+                            </div>
+                            <h5>האם כדאי לי?</h5>
+                            <p>
+                                יש לקחת בחשבון את כל הפרמטרים, דלק, זמן, מאמץ פיזי, הוצאת כספית על חומרי אריזה ומרחק הנסיעה. בעת מעבר דירה עם תכולה קטנה (למשל לדירה מאובזרת), ובמרחק לא גדול,
+                                יתכן שישתלם יותר להעביר ברכב פרטי או לשכור רכב להובלה. במידה ולא, מומלץ להשתמש בחברת הובלה.
+                                <br /><br />
+
+                                <strong>קיימות חברות להשכרת רכב להובלה עצמית,</strong>
+                                <a href="https://www.d.co.il/SearchResults?location=&tagIds=27990&sortType=3&tagIds=40033419" target="_blank" id="extraInfoMoving">
+                                    למידע נוסף והמלצות
+                                    לחץ כאן.
+                                </a>
+                            </p>
+                            <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+
+
+                            <h4>חברות הובלה</h4>
+                            <section>
+                                <h5>מחירים להובלת דירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>הובלת דירה</th>
+                                        <th id="cost">
+                                            מחיר בש"ח
+                                            <ul>
+                                                <li>המחיר כולל טווח של עד 30 ק"מ</li>
+                                                <li>הובלה בבניינים עם מעלית</li>
+                                                <li>המחיר לא כולל דירות עם נגישות בעייתית</li>
+                                            </ul>
+                                        </th>
+                                    </tr>
+                                    <tr>
+                                        <td>חדר אחד</td>
+                                        <td>800-1,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2 חדרים</td>
+                                        <td>1,200-2,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>3 חדרים</td>
+                                        <td>1,600-2,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>4 חדרים</td>
+                                        <td>1,800-3,000</td>
+                                    </tr>
+                                    <tr>
+                                        <td>5 חדרים</td>
+                                        <td>2,200-4,400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>6 חדרים</td>
+                                        <td>3,500-5,500</td>
+                                    </tr>
+
+                                </table>
+                            </section>
+
+                            <section>
+                                <h5>המלצה לטיפ למובילים</h5>
+                                <p>הטיפ המקובל הוא בטווח של 50-100 ש"ח לכל אחד מהמובילים</p>
+                            </section>
+                            <section>
+                                <h5>מעבר דירה- מקרים מיוחדים ותוספות להעברת הדירה</h5>
+                                <table class="movingCost">
+                                    <tr>
+                                        <th>קטגוריה</th>
+                                        <th>מחיר בש"ח</th>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בסוף חודש או בתחילתו</td>
+                                        <td>10-20% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה בחודשים יולי- אוגוסט</td>
+                                        <td>15-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עם מנוף- מחיר לשעת עבודה</td>
+                                        <td>300-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>העברה לבניין בלי מעלית</td>
+                                        <td>20-30% תוספת</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה עד 100 ק"מ- תוספת למחיר ההובלה</td>
+                                        <td>1,500-3,500</td>
+                                    </tr>
+                                    <tr>
+                                        <td>פירוק והרכבת ארון</td>
+                                        <td>200-400</td>
+                                    </tr>
+                                    <tr>
+                                        <td>הובלה של פריט בודד(מקרר, מיטה, ספה, מכונת כביה ועוד)</td>
+                                        <td>200-600</td>
+                                    </tr>
+                                    <tr>
+                                        <th colspan="2">שירותי אריזה</th>
+                                    </tr>
+                                    <tr>
+                                        <td>מחיר לארגז בודד</td>
+                                        <td>25-50</td>
+                                    </tr>
+                                    <tr>
+                                        <td>אריזת ציוד שביר (מחיר לארגז)</td>
+                                        <td>30-60</td>
+                                    </tr>
+                                </table>
+                                <p><strong>בהתאם לתוכן העניינים שכתבתם, אל תשכחו להנחות את המוביל להניח את הארגזים בחלוקה לחדרים השונים בבית בהתאמה!</strong></p>
+                            </section>
+
+                            <section>
+                                <h4>חברות הובלה הנותנות שירות בכל הארץ</h4>
+                                <p>
+                                    <a href="https://www.d.co.il/h-c35840-e0-p0-l0-t40035693.na1" target="_blank" id="hCompaniesInfo">
+                                        למידע נוסף והמלצות
+                                        לחץ כאן.
+                                    </a>
+                                </p>
+                                <div id="bottomLineMoving"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+                            </section>
+                            <div id="backgroundLine4"></div>
+                        </div>
+                        <div id="birokratia">
+                            <h4>סידור בירוקרטיה באופן עצמאי</h4>
+                            <section>
+                                <h4>לבד</h4>
+                                <h5>מים</h5>
+                                <h6>קניית דירה</h6>
+                                <ul>
+                                    <li>יש לצרף את פרטי הרוכש יחד עם ההצהרה על מצב מד-המים בשעון המים של הדירה בצירוף צילום 2 תעודות הזהות עם ספח פתוח לרוחב.</li>
+                                    <li>יש לשים לב, שכאשר עוברים לדירה חדשה דרך חשבון המים משלמים גם התקנת שעון מים חדש. *בעת רישום חשבון מים יש להצטייד בספח תעודת הזהות של כל בני הבית.</li>
+                                    <li>כאשר קונים דירה מבעלות קודמת, יש לברר על טופס "החלפת משלם" על חשבון המים (לדוגמא עיריית מודיעין).</li>
+                                    <li>מומלץ לברר כי לבעל הדירה הקודמת אין חובות בעירייה לגבי תשלום המים.</li>
+                                </ul>
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>על השוכר לחתום יחד עם בעל הדירה על הצהרה בדבר קריאת מונה וכן הצהרה שכעת הוא הצרכן הנוכחי.</p>
+                                <p>
+                                    הטופס הנוכחי זהה לשכירת וקניית דירה
+                                    <br /> *יש לשים לב כי הטופס משתנה בין עירייה לעירייה.<br />
+
+                                    <a href="forms/טופס העברת משלם חשבון מים.pdf" target="_blank"><img src="images/html/waterForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת משלם חשבון מים" /></a>
+                                </p>
+                                <p id="bigPicWater">*לחץ על התמונה למעבר לטופס</p>
+
+
+                            </section>
+                            <section>
+                                <h5>גז</h5>
+                                <p>יש לשים לב אם מדובר במעבר לבית פרטי או בניין משותף. בעת בניין משותף מתקיים כל מה שכתוב במים, אם הבית הוא פרטי יש להתייחס לבלוני הגז- במידה וריקים לרכוש חדשים</p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/טופס העברת בעלות גז.pdf" target="_blank" id="gasFormIngo"><img src="images/html/gasForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="טופס העברת בעלות גז" /></a>
+                                <p id="gazPic">*לחץ על התמונה למעבר לטופס</p>
+                            </section>
+
+                            <h5>חשמל</h5>
+                            <section>
+                                <h6>קניית דירה</h6>
+                                <p>כדי להעביר חשבון חשמל הדייר החדש ירשום את מצב המונה, יתקשר למרכז השרות 103, וימסור את הנתונים הבאים: מספר החוזה (שמופיע בחלקו העליון של חשבון החשמל), מצב המונה ופרטים אישיים של הלקוח (שם, מספר תעודת זהות, וטלפון). החשבון הבא ישלח על שמו. </p>
+                                <p>
+                                    טופס רישום לקוח חדש- חברת החשמל
+                                    <br />
+                                    <a href="forms/רישום לקוח חדש- חשמל.pdf" target="_blank"><img src="images/html/electricityNewForm.JPG" width="200" aria-label="לחץ למעבר לטופס" alt="רישום לקוח חדש - חברת החשמל" /></a>
+                                </p>
+                                <p id="hashmalPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h6>שכירת דירה</h6>
+                                <p>כפי שכתוב בקניית דירה. בנוסף, יש לוודא כי השוכר חותם על הצהרה בדבר קריאת מונה לפני התשלום והחלפת המונה אצל העירייה. </p>
+                                <p>הטופס הנוכחי זהה לשכירת וקניית דירה</p>
+                                <a href="forms/החלפת שם לקוח חשמל.pdf" target="_blank" id="newHashForm"><img src="images/html/electricityForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="החלפת שם לקוח- חברת החשמל" /></a>
+                                <p id="newHashPic">*לחץ על התמונה למעבר לטופס</p>
+
+                            </section>
+                            <section>
+                                <h5>עדכוני כתובת והעברת שירותי ספק</h5>
+                                <p>כאשר עוברים דירה יש לגשת לרשות מרשם האוכלוסין ולעדכן את הכתובת החדשה בצירוף תעודת הזהות של כל דיירי הבית.</p>
+                                <p>הטופס-</p>
+                                <a href="forms/טופס שינוי מען.pdf" target="_blank" id="maanForm"><img src="images/html/adressForm.JPG" width="200" aria-label="לחץ על התמונה למעבר לטופס" alt="טופס שינוי מען" /></a>
+                                <p id="maanPic">*לחץ על התמונה למעבר לטופס</p>
+
+                                <ul>
+                                    <li>כשבועיים לפני המעבר יש ליצור קשר עם חברות הכבלים והטלפון להעברת הכבלים והעתקת קו הטלפון שלכם לדירה החדשה. עלות התקנת/העברת קו תעשה בחינם או במחיר עשרות שקלים בודדים (בהתאם לחוקי החברה).</li>
+                                    <li>מומלץ להשתמש בשירות "דואר עוקב" של דואר ישראל בכדי להבטיח שכל הדואר יגיע למקום מגוריכם החדש בלבד.</li>
+                                    <li>כל עוד נשארים באותה תשתית אינטרנט אין מחויבות להודיע לספק האינטרנט על המעבר  אך מומלץ מאד (במקרה שהוא אינו אותו ספק של הכבלים והטלפון).</li>
+                                    <li>ישנה אפשרות לבצע העברת כתובת ללא עלות בצורה מקוונת באתר משרד הפנים, <a href="https://www.gov.il/he/service/changing_address" id="govLink" aria-label="לחץ למעבר לאתר" target="_blank">לחץ כאן לכניסה לאתר.</a> </li>
+                                </ul>
+                            </section>
+
+
+                            <h4>סידור בירוקרטיה בעזרת חברה</h4>
+                            <table>
+                                <tr>
+                                    <th>שם החברה</th>
+                                    <th>טלפון</th>
+                                    <th>שעות פעילות</th>
+                                </tr>
+                                <tr>
+                                    <th>avarty</th>
+                                    <td>מייל- team@avarty.co.il</td>
+                                    <td>ימים א'-ה' בין השעות 8:00-16:00</td>
+                                </tr>
+                                <tr>
+                                    <th>over bait</th>
+                                    <td>053-278-1178</td>
+                                    <td>שירות "עובר בית" מתבצע באופן מקוון ועל כן ניתן להירשם לשרות בכל נקודת זמן ומכל מקום</td>
+                                </tr>
+                                <tr>
+                                    <th>דואר ישראל</th>
+                                    <td>171 מכל טלפון</td>
+                                    <td>בהתאם לשעות הפתיחה של סניף הדואר הקרוב לביתכם.</td>
+                                </tr>
+
+
+                            </table>
+                            <div id="bottomLineBiroc"> * יש לציין כי אין אנו ממליצים או מבטיחים את איכות השירות.</div>
+
+                            <footer>
+                                © כל הזכויות שמורות ליוצרי
+                                ez2move
+                            </footer>
+                        </div>
+                    </section>
+                </div>
+            </article>
+
+
+
+
+        </div>
+    </div>
+
+
+</body>
+</html>

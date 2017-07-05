@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="he">
+<head>
+    <meta charset="utf-8" />
+    <title>ez2move - מפת אתר</title>
+    <meta name="description" content="מפת אתר,ez2move!" />
+    <meta name="keywords" content="ez2move,מפת אתר " />
+    <meta name="author" content="daniel oren, shaked dinar, tomer grinberg, שקד דינר, דניאל אורן, תומר גרינברג" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="icon" href="images/html/favicon.png">
+    <!-- CSS -->
+    <link href="styles/reset.css" rel="stylesheet" />
+    <link href="fonts/fonts.css" rel="stylesheet" />
+    <link href="styles/myStyle.css" rel="stylesheet" />
+
+    <!-- Scripts -->
+    <script src="jScripts/jquery-1.12.0.min.js"></script>
+    <script src="jScripts/dragend.js"></script>
+    <script src="jScripts/JavaScript.js"></script>
+
+</head>
+<body onload="tab_nav()">
+    <div id="siteMapContainer">
+        <div class="global_items_insidePages">
+            <a href="index.html"><img src="images/html/logo.png" class="insidePagesLogo" width="100" alt="ez2move לוגו" /></a>
+            <a href="#0" tabindex="0" onclick="navFunc()" id="hamburgerNavIcon" alt="תפריט ניווט" width="40" aria-label="תפריט ניווט"></a>
+
+            <nav id="hamburgerNav" class="ver">
+                <ul>
+                    <li><a href="#0" tabindex="0" onclick="navFunc()" id="hamburgerNavIcon" alt="תפריט ניווט" width="40" aria-label="תפריט ניווט"></a></li>
+                    <li><a href="index.html" onclick="goToHomePage()">דף הבית</a></li>
+                    <li>
+                        <a href="#0" id="goToContent" onclick="goToContent()" style="cursor:pointer;">
+                            עבור לתוכן
+                            <div id="tangishIcon" alt="כפתור נגישות" aria-label="עבור לתוכן"></div>
+                        </a>
+                    </li>
+                    <li><a href="interactive.html">אריזה אינטראקטיבית</a></li>
+                    <li><a href="about.html">אודות</a></li>
+                    <li><a href="contactUs.html">צור קשר</a></li>
+                    <li><a href="siteMap.html">מפת אתר</a></li>
+                </ul>
+            </nav>
+
+
+
+        </div>
+
+        <div id=divOfki>
+            <div class="grid_wrapper">
+                <div id="siteMapContent">
+                    <h1>מפת אתר</h1>
+                    <ul>
+                        <li><a href="index.html">דף הבית</a></li>
+                        <li><a href="#0" class="not-allowed">זוג</a></li>
+                        <li><a href="#0" class="not-allowed">אדם עם מוגבלות</a></li>
+                        <li><a href="#0" class="not-allowed">משפחה</a></li>
+                        <li><a href="#0" class="not-allowed">סטודנט</a></li>
+                        <li><a href="#0" class="not-allowed">יחיד</a></li>
+                        <li><a href="interactive.html">אריזה אינטראקטיבית</a></li>
+                        <li><a href="about.html">אודות</a></li>
+                        <li><a href="contactUs.html">צור קשר</a></li>
+                    </ul>
+
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
